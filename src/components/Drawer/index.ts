@@ -1,13 +1,11 @@
-export { AppBar } from './AppBar/AppBar';
+export { AppBar } from './AppBar';
 export { ApplicationList } from './ApplicationList';
 export { CategoriesList } from './CategoriesList';
 export { CategoryListItem } from './CategoriesList';
 export { CategoryListItemMenuList } from './CategoriesList';
-
-export { CreateCategoryListItem } from './CategoriesList';
-
-export { Drawer } from './Drawer/Drawer';
 export { ClassifierList } from './ClassifierList';
+export { CreateCategoryListItem } from './CategoriesList';
+export { Drawer } from './Drawer';
 export { EvaluateListItem } from './ClassifierList';
 export { FitListItem } from './ClassifierList';
 export { HelpListItem } from './MiscellaneousList';
