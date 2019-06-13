@@ -7,6 +7,7 @@ export { ConnectedFitListItem } from './Drawer/ClassifierList/FitListItem/Connec
 export { ConnectedEditCategoryDialog } from './EditCategoryDialog';
 export { ConnectedNewClassifierDialog } from './NewClassifierDialog';
 export { ConnectedOpenExampleClassifierDialog } from './OpenExampleClassifierDialog';
+export { ConnectedOpenClassifierMenuItem } from './Drawer/ApplicationList/OpenListItem/OpenExampleClassifierMenuItem/ConnectedOpenClassifierMenuItem';
 export { ConnectedOpenListItem } from './Drawer/ApplicationList/OpenListItem/OpenListItem/ConnectedOpenListItem';
 export { ConnectedSaveClassifierDialog } from './SaveClassifierDialog';
 export { ConnectedSaveListItem } from './Drawer/ApplicationList/SaveListItem/ConnectedSaveListItem';

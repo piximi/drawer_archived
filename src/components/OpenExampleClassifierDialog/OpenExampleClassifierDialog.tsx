@@ -13,9 +13,9 @@ import {
 import CloseIcon from '@material-ui/icons/Close';
 import { makeStyles } from '@material-ui/styles';
 import { useTranslation } from 'react-i18next';
-import { OpenExampleClassifierListItem } from '../../pages/images';
 // @ts-ignore
 import WORMS from './worms.png';
+import { OpenExampleClassifierListItem } from "../Drawer";
 
 const useStyles = makeStyles(styles);
 

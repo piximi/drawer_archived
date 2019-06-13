@@ -30,9 +30,7 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
   };
 };
 
-const ConnectedOpenExampleClassifierDialog = connect(
+export const ConnectedOpenExampleClassifierDialog = connect(
   mapStateToProps,
   mapDispatchToProps
 )(OpenClassifierMenuItem);
-
-export default ConnectedOpenExampleClassifierDialog;

@@ -2,6 +2,7 @@ import { ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import * as React from 'react';
 import AddIcon from '@material-ui/icons/Add';
 import { useDialog } from '@piximi/hooks';
+import { ConnectedNewClassifierDialog } from "../../../../containers";
 
 export const NewClassifierListItem = () => {
   const { openedDialog, openDialog, closeDialog } = useDialog();
