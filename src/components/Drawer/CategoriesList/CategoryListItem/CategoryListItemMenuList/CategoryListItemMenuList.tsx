@@ -7,6 +7,10 @@ import {
   Popover
 } from '@material-ui/core';
 import { useDialog } from '@piximi/hooks';
+import {
+  ConnectedEditCategoryDialog,
+  ConnectedDeleteCategoryDialog
+} from "../../../../../containers";
 
 export const CategoryListItemMenuList = (props: any) => {
   const { anchorEl, category, closeMenu, openedMenu } = props;

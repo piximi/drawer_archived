@@ -13,6 +13,12 @@ import StyledCategory from './StyledCategory';
 import styles from './CategoryListItem.css';
 import { makeStyles } from '@material-ui/styles';
 import { useMenu } from '@piximi/hooks';
+import {
+  ConnectedCategoryDropTarget
+} from "../../../../../containers/Drawer";
+import {
+  CategoryListItemMenuList
+} from "../../..";
 
 const useStyles = makeStyles(styles);
 

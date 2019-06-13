@@ -5,6 +5,7 @@ import {
 } from '@piximi/store';
 import { Classifier } from '@piximi/types';
 import { Dispatch } from 'redux';
+import {EditCategoryDialog} from "../../components/EditCategoryDialog";
 
 type State = {
   classifier: Classifier;

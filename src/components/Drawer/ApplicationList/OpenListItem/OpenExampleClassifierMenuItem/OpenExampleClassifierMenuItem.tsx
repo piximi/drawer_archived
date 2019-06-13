@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as MaterialUI from '@material-ui/core';
 import { useDialog } from '@piximi/hooks';
+import { ConnectedOpenExampleClassifierDialog } from "../../../../../containers";
 
 type OpenExampleClassifierMenuItemProps = {
   closeMenu: () => void;

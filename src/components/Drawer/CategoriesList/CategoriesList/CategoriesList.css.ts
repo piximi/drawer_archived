@@ -9,5 +9,3 @@ const styles = (theme: Theme) =>
       right: theme.spacing(2)
     }
   });
-
-export default styles;

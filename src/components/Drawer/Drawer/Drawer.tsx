@@ -3,6 +3,7 @@ import * as React from 'react';
 import styles from './Drawer.css';
 import {makeStyles} from '@material-ui/styles';
 import {AppBar, ApplicationList, ClassifierList, MiscellaneousList} from '..';
+import {ConnectedCategoriesList} from "../../../containers/Drawer";
 
 const useStyles = makeStyles(styles);
 
