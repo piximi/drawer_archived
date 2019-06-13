@@ -1,1 +1,1 @@
-Piximi’s Drawer component
+Piximi’s drawer React component
