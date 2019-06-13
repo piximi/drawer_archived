@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { createCategoryAction, createImageAction } from '@piximi/store';
 import { Dispatch } from 'redux';
 import { Classifier } from '@piximi/types';
-import {OpenListItem} from "../../../../components/Drawer";
+import {OpenListItem} from "../../../../../components/Drawer";
 
 type State = {
   classifier: Classifier;
