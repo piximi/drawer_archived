@@ -1,24 +1,15 @@
 export { AppBar } from './AppBar/AppBar';
-export {
-  ApplicationList
-} from './ApplicationList/ApplicationList/ApplicationList';
-export { CategoriesList } from './CategoriesList/CategoriesList/CategoriesList';
-export {
-  CategoryListItem
-} from './CategoriesList/CategoryListItem/CategoryListItem/CategoryListItem';
-export {
-  CategoryListItemMenuList
-} from './CategoriesList/CategoryListItem/CategoryListItemMenuList/CategoryListItemMenuList';
+export { ApplicationList } from './ApplicationList';
+export { CategoriesList } from './CategoriesList';
+export { CategoryListItem } from './CategoriesList';
+export { CategoryListItemMenuList } from './CategoriesList';
 
-export {
-  CreateCategoryListItem
-} from './CategoriesList/CreateCategoryListItem/CreateCategoryListItem';
+export { CreateCategoryListItem } from './CategoriesList';
 
 export { Drawer } from './Drawer/Drawer';
 export { ClassifierList } from './ClassifierList';
 export { EvaluateListItem } from './ClassifierList';
 export { FitListItem } from './ClassifierList';
-
 export { HelpListItem } from './MiscellaneousList';
 export { MiscellaneousList } from './MiscellaneousList';
 export { NewClassifierListItem } from './ApplicationList';
