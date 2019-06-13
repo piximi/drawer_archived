@@ -16,14 +16,8 @@ export { OpenMenuList } from './OpenListItem/OpenMenuList/OpenMenuList';
 export {
   OpenWeightsMenuItem
 } from './OpenListItem/OpenWeightsMenuItem/OpenWeightsMenuItem';
-export {
-  SaveAnnotationsAndPredictionsMenuItem
-} from './SaveListItem/SaveAnnotationsAndPredictionsMenuItem/SaveAnnotationsAndPredictionsMenuItem';
-export {
-  SaveClassifierMenuItem
-} from './SaveListItem/SaveClassifierMenuItem/SaveClassifierMenuItem';
-export { SaveListItem } from './SaveListItem/SaveListItem/SaveListItem';
-export { SaveMenuList } from './SaveListItem/SaveMenuList/SaveMenuList';
-export {
-  SaveWeightsMenuItem
-} from './SaveListItem/SaveWeightsMenuItem/SaveWeightsMenuItem';
+export { SaveAnnotationsAndPredictionsMenuItem } from './SaveListItem';
+export { SaveClassifierMenuItem } from './SaveListItem';
+export { SaveListItem } from './SaveListItem';
+export { SaveMenuList } from './SaveListItem';
+export { SaveWeightsMenuItem } from './SaveListItem';
