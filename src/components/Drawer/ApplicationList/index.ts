@@ -1,14 +1,11 @@
-export { ApplicationList } from './ApplicationList/ApplicationList';
-export {
-  NewClassifierListItem
-} from './NewClassifierListItem/NewClassifierListItem';
+export { ApplicationList } from './ApplicationList';
+export { NewClassifierListItem } from './NewClassifierListItem';
 export { OpenClassifierMenuItem } from './OpenListItem';
 export { OpenExampleClassifierListItem } from './OpenListItem';
 export { OpenExampleClassifierMenuItem } from './OpenListItem';
 export { OpenListItem } from './OpenListItem';
 export { OpenMenuList } from './OpenListItem';
 export { OpenWeightsMenuItem } from './OpenListItem';
-
 export { SaveAnnotationsAndPredictionsMenuItem } from './SaveListItem';
 export { SaveClassifierMenuItem } from './SaveListItem';
 export { SaveListItem } from './SaveListItem';
