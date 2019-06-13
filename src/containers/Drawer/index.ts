@@ -11,6 +11,9 @@ export {
   ConnectedFitListItem
 } from './ClassifierList/FitListItem/ConnectedFitListItem';
 export {
+  ConnectedOpenClassifierMenuItem
+} from './ApplicationList/OpenListItem/OpenExampleClassifierMenuItem/ConnectedOpenClassifierMenuItem';
+export {
   ConnectedOpenListItem
 } from './ApplicationList/OpenListItem/OpenListItem/ConnectedOpenListItem';
 export {

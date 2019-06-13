@@ -17,9 +17,7 @@ export { ConnectedNewClassifierDialog } from './NewClassifierDialog';
 export {
   ConnectedOpenExampleClassifierDialog
 } from './OpenExampleClassifierDialog';
-export {
-  ConnectedOpenClassifierMenuItem
-} from './Drawer/ApplicationList/OpenListItem/OpenExampleClassifierMenuItem/ConnectedOpenClassifierMenuItem';
+export { ConnectedOpenClassifierMenuItem } from './Drawer';
 export {
   ConnectedOpenListItem
 } from './Drawer/ApplicationList/OpenListItem/OpenListItem/ConnectedOpenListItem';

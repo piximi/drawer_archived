@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { DeleteCategoryDialog } from '../pages/images';
+import { DeleteCategoryDialog } from '../../components';
 import { deleteCategoryAction } from '@piximi/store';
 import { Classifier } from '@piximi/types';
 import { Dispatch } from 'redux';

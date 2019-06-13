@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { OpenClassifierMenuItem } from '../pages/images';
+import { OpenClassifierMenuItem } from '../../../../../components/Drawer/ApplicationList/OpenListItem';
 import { Category, Image, Classifier } from '@piximi/types';
 import { Dispatch } from 'redux';
 import { openClassifierAction } from '@piximi/store';
@@ -30,7 +30,7 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
   };
 };
 
-export const ConnectedOpenExampleClassifierDialog = connect(
+export const ConnectedOpenClassifierMenuItem = connect(
   mapStateToProps,
   mapDispatchToProps
 )(OpenClassifierMenuItem);
