@@ -10,7 +10,7 @@ const useStyles = makeStyles(styles);
 export const Drawer = (props: any) => {
   const classes = useStyles({});
 
-  const { setUnlabelledVisibility, toggled, toggle } = props;
+  const { toggled, toggle } = props;
 
   return (
     <MaterialUI.Drawer
@@ -27,9 +27,7 @@ export const Drawer = (props: any) => {
 
       <MaterialUI.Divider />
 
-      <ConnectedCategoriesList
-        setUnlabelledVisibility={setUnlabelledVisibility}
-      />
+      <ConnectedCategoriesList />
 
       <MaterialUI.Divider />
 
