@@ -6,7 +6,7 @@ import {
 } from '@piximi/store';
 import { Classifier } from '@piximi/types';
 import { Dispatch } from 'redux';
-import {CategoryListItem} from "../../../../components/Drawer";
+import { CategoryListItem } from '../../../../components/Drawer';
 
 type State = {
   classifier: Classifier;

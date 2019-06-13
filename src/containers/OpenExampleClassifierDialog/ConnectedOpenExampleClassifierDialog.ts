@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { Classifier, Category, Image } from '@piximi/types';
 import { Dispatch } from 'redux';
 import { openClassifierAction } from '@piximi/store';
-import {OpenExampleClassifierDialog} from "../../components";
+import { OpenExampleClassifierDialog } from '../../components';
 
 type State = {
   classifier: Classifier;

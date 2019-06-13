@@ -3,7 +3,7 @@ import { createClassifierAction } from '@piximi/store';
 import { Classifier } from '@piximi/types';
 import * as uuid from 'uuid';
 import { Dispatch } from 'redux';
-import {NewClassifierDialog} from "../../components";
+import { NewClassifierDialog } from '../../components';
 
 type State = {
   classifier: Classifier;

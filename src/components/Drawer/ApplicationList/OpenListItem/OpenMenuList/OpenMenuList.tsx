@@ -1,12 +1,7 @@
 import * as React from 'react';
 import * as MaterialUI from '@material-ui/core';
-import {
-  ConnectedOpenClassifierMenuItem
-} from '../../../../../containers';
-import {
-  OpenExampleClassifierMenuItem,
-  OpenWeightsMenuItem
-} from '../../..';
+import { ConnectedOpenClassifierMenuItem } from '../../../../../containers';
+import { OpenExampleClassifierMenuItem, OpenWeightsMenuItem } from '../../..';
 
 type Props = {
   anchorEl: any;

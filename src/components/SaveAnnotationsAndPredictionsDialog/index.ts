@@ -1,1 +1,3 @@
-export { SaveAnnotationsAndPredictionsDialog } from './SaveAnnotationsAndPredictionsDialog';
+export {
+  SaveAnnotationsAndPredictionsDialog
+} from './SaveAnnotationsAndPredictionsDialog';

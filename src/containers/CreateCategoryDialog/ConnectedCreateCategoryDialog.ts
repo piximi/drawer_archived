@@ -3,7 +3,7 @@ import { createCategoryAction } from '@piximi/store';
 import uuidv4 from 'uuid';
 import { Dispatch } from 'redux';
 import { Classifier, Category } from '@piximi/types';
-import {CreateCategoryDialog} from "../../components";
+import { CreateCategoryDialog } from '../../components';
 
 let index = 0;
 

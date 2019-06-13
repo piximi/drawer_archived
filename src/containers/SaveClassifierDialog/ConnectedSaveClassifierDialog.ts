@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import { Classifier } from '@piximi/types';
-import {SaveClassifierDialog} from "../../components";
+import { SaveClassifierDialog } from '../../components';
 
 type State = {
   classifier: Classifier;

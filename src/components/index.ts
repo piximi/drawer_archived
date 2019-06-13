@@ -5,6 +5,8 @@ export { EditCategoryDialog } from './EditCategoryDialog';
 export { HelpDialog } from './HelpDialog';
 export { NewClassifierDialog } from './NewClassifierDialog';
 export { OpenExampleClassifierDialog } from './OpenExampleClassifierDialog';
-export { SaveAnnotationsAndPredictionsDialog } from './SaveAnnotationsAndPredictionsDialog';
+export {
+  SaveAnnotationsAndPredictionsDialog
+} from './SaveAnnotationsAndPredictionsDialog';
 export { SaveClassifierDialog } from './SaveClassifierDialog';
 export { SaveWeightsDialog } from './SaveWeightsDialog';

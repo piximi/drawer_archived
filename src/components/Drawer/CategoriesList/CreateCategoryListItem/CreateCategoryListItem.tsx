@@ -3,7 +3,7 @@ import { ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
 import { useDialog } from '@piximi/hooks';
 import { useTranslation } from 'react-i18next';
-import { ConnectedCreateCategoryDialog } from "../../../../containers";
+import { ConnectedCreateCategoryDialog } from '../../../../containers';
 
 export const CreateCategoryListItem = () => {
   const { openedDialog, openDialog, closeDialog } = useDialog();

@@ -2,7 +2,7 @@ import * as React from 'react';
 import SaveIcon from '@material-ui/icons/Save';
 import * as MaterialUI from '@material-ui/core';
 import { useMenu } from '@piximi/hooks';
-import { SaveMenuList } from "../../..";
+import { SaveMenuList } from '../../..';
 
 export const SaveListItem = () => {
   const { anchorEl, openedMenu, openMenu, closeMenu } = useMenu();

@@ -14,8 +14,14 @@
     "@types/react": "16.8.19",
     "@types/react-dom": "16.8.4",
     "axios": "^0.19.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "file-saver": "^2.0.2",
+    "husky": "^2.4.1",
+    "jest-enzyme": "^7.0.2",
+    "lint-staged": "^8.2.1",
     "lodash": "^4.17.11",
+    "prettier": "^1.18.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-i18next": "^10.11.0",
@@ -29,11 +35,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
+  "lint-staged": {
+    "src/**/*.{css,js,json,jsx,ts,tsx}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "homepage": ".",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -44,6 +58,11 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
     ]
   },
   "devDependencies": {

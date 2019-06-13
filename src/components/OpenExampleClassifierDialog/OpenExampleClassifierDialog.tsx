@@ -15,7 +15,7 @@ import { makeStyles } from '@material-ui/styles';
 import { useTranslation } from 'react-i18next';
 // @ts-ignore
 import WORMS from './worms.png';
-import { OpenExampleClassifierListItem } from "../Drawer";
+import { OpenExampleClassifierListItem } from '../Drawer';
 
 const useStyles = makeStyles(styles);
 

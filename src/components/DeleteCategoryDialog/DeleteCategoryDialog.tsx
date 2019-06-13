@@ -18,9 +18,7 @@ export const DeleteCategoryDialog = (props: any) => {
 
   const dialogTitle = `Delete ${category.description}?`;
 
-  const dialogContentText = `Images categorized as ${
-    category.description
-  } won’t be deleted.`;
+  const dialogContentText = `Images categorized as ${category.description} won’t be deleted.`;
 
   const { t: translation } = useTranslation();
 

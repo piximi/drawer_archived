@@ -10,7 +10,7 @@ import { useDialog } from '@piximi/hooks';
 import {
   ConnectedEditCategoryDialog,
   ConnectedDeleteCategoryDialog
-} from "../../../../../containers";
+} from '../../../../../containers';
 
 export const CategoryListItemMenuList = (props: any) => {
   const { anchorEl, category, closeMenu, openedMenu } = props;

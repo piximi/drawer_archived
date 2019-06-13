@@ -26,7 +26,7 @@ export const colors = [
   'rgb( 44,  80, 191)', // b, 80s
   'rgb( 19,	 55, 160)', // b, 90s
   'rgb( 54, 133, 213)', // b, 00s
-  'rgb( 12, 103, 254)'  // b, 10s
+  'rgb( 12, 103, 254)' // b, 10s
 ];
 
 export const CreateCategoryDialog = (props: any) => {
