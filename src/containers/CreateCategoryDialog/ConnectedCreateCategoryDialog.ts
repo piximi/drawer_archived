@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import { createCategoryAction } from '@piximi/store';
-import { CreateCategoryDialog } from '../pages/images';
 import uuidv4 from 'uuid';
 import { Dispatch } from 'redux';
 import { Classifier, Category } from '@piximi/types';
+import {CreateCategoryDialog} from "../../components";
 
 let index = 0;
 
@@ -39,9 +39,7 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
   };
 };
 
-const ConnectedCreateCategoryDialog = connect(
+export const ConnectedCreateCategoryDialog = connect(
   mapStateToProps,
   mapDispatchToProps
 )(CreateCategoryDialog);
-
-export default ConnectedCreateCategoryDialog;

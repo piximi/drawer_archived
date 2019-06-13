@@ -1,0 +1,1 @@
+export { ConnectedNewClassifierDialog } from './ConnectedNewClassifierDialog';

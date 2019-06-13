@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
-import { NewClassifierDialog } from '../pages/images';
 import { createClassifierAction } from '@piximi/store';
 import { Classifier } from '@piximi/types';
 import * as uuid from 'uuid';
 import { Dispatch } from 'redux';
+import {NewClassifierDialog} from "../../components";
 
 type State = {
   classifier: Classifier;
@@ -28,9 +28,7 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
   };
 };
 
-const ConnectedNewClassifierDialog = connect(
+export const ConnectedNewClassifierDialog = connect(
   mapStateToProps,
   mapDispatchToProps
 )(NewClassifierDialog);
-
-export default ConnectedNewClassifierDialog;

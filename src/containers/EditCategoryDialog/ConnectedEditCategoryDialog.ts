@@ -3,7 +3,6 @@ import {
   updateCategoryColorAction,
   updateCategoryDescriptionAction
 } from '@piximi/store';
-import { EditCategoryDialog } from '../pages/images';
 import { Classifier } from '@piximi/types';
 import { Dispatch } from 'redux';
 
@@ -36,9 +35,7 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
   };
 };
 
-const ConnectedEditCategoryDialog = connect(
+export const ConnectedEditCategoryDialog = connect(
   mapStateToProps,
   mapDispatchToProps
 )(EditCategoryDialog);
-
-export default ConnectedEditCategoryDialog;

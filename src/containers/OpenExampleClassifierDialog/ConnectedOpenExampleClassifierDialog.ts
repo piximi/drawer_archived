@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
-import { OpenExampleClassifierDialog } from '../pages/images';
 import { Classifier, Category, Image } from '@piximi/types';
 import { Dispatch } from 'redux';
 import { openClassifierAction } from '@piximi/store';
+import {OpenExampleClassifierDialog} from "../../components";
 
 type State = {
   classifier: Classifier;
@@ -34,9 +34,7 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
   };
 };
 
-const ConnectedOpenExampleClassifierDialog = connect(
+export const ConnectedOpenExampleClassifierDialog = connect(
   mapStateToProps,
   mapDispatchToProps
 )(OpenExampleClassifierDialog);
-
-export default ConnectedOpenExampleClassifierDialog;

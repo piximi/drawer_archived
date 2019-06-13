@@ -28,9 +28,7 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
   };
 };
 
-const ConnectedDeleteCategoryDialog = connect(
+export const ConnectedDeleteCategoryDialog = connect(
   mapStateToProps,
   mapDispatchToProps
 )(DeleteCategoryDialog);
-
-export default ConnectedDeleteCategoryDialog;

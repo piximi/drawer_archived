@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
-import { SaveClassifierDialog } from '../pages/images';
 import { Dispatch } from 'redux';
 import { Classifier } from '@piximi/types';
+import {SaveClassifierDialog} from "../../components";
 
 type State = {
   classifier: Classifier;
@@ -17,9 +17,7 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
   return {};
 };
 
-const ConnectedSaveClassifierDialog = connect(
+export const ConnectedSaveClassifierDialog = connect(
   mapStateToProps,
   mapDispatchToProps
 )(SaveClassifierDialog);
-
-export default ConnectedSaveClassifierDialog;
