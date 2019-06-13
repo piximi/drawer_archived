@@ -8,7 +8,7 @@ import { TextField } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';
 import * as React from 'react';
 
-const NewClassifierDialog = (props: any) => {
+export const NewClassifierDialog = (props: any) => {
   const { openClassifier, openedDialog, closeDialog } = props;
 
   const { t: translation } = useTranslation();
@@ -51,5 +51,3 @@ const NewClassifierDialog = (props: any) => {
     </Dialog>
   );
 };
-
-export default NewClassifierDialog;

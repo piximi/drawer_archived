@@ -19,7 +19,7 @@ import WORMS from './worms.png';
 
 const useStyles = makeStyles(styles);
 
-const OpenExampleClassifierDialog = (props: any) => {
+export const OpenExampleClassifierDialog = (props: any) => {
   const classes = useStyles({});
 
   const { t: translation } = useTranslation();
@@ -80,5 +80,3 @@ const OpenExampleClassifierDialog = (props: any) => {
     </Dialog>
   );
 };
-
-export default OpenExampleClassifierDialog;

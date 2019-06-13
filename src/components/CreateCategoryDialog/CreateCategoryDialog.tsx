@@ -9,7 +9,7 @@ import {
 } from '@piximi/components';
 import { colors } from '../../constants';
 
-const CreateCategoryDialog = (props: any) => {
+export const CreateCategoryDialog = (props: any) => {
   const { createCategory, open, onClose } = props;
 
   const [color, setColor] = React.useState<string>('#00e676');
@@ -57,5 +57,3 @@ const CreateCategoryDialog = (props: any) => {
     </Dialog>
   );
 };
-
-export default CreateCategoryDialog;

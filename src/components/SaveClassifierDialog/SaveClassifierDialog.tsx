@@ -15,7 +15,7 @@ type SaveClassifierDialogProps = {
   onClose: () => void;
 };
 
-const SaveClassifierDialog = (props: SaveClassifierDialogProps) => {
+export const SaveClassifierDialog = (props: SaveClassifierDialogProps) => {
   const { classifier, open, onClose } = props;
 
   const [filename, setFilename] = React.useState<string>(classifier.name);
@@ -65,5 +65,3 @@ const SaveClassifierDialog = (props: SaveClassifierDialogProps) => {
     </Dialog>
   );
 };
-
-export default SaveClassifierDialog;

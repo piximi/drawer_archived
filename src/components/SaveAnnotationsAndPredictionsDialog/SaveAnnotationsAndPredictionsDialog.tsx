@@ -7,7 +7,7 @@ import {
   FilenameTextField
 } from '@piximi/components';
 
-const SaveAnnotationsAndPredictionsDialog = (props: any) => {
+export const SaveAnnotationsAndPredictionsDialog = (props: any) => {
   const { open, onClose } = props;
 
   const [filename, setFilename] = React.useState<string>('');
@@ -42,5 +42,3 @@ const SaveAnnotationsAndPredictionsDialog = (props: any) => {
     </Dialog>
   );
 };
-
-export default SaveAnnotationsAndPredictionsDialog;

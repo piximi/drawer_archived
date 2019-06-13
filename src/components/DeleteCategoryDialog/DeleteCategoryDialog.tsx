@@ -9,7 +9,7 @@ import {
 } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';
 
-const DeleteCategoryDialog = (props: any) => {
+export const DeleteCategoryDialog = (props: any) => {
   const { category, deleteCategory, open, onClose } = props;
 
   const onDeleteCategoryClick = () => {
@@ -46,5 +46,3 @@ const DeleteCategoryDialog = (props: any) => {
     </Dialog>
   );
 };
-
-export default DeleteCategoryDialog;
