@@ -7,10 +7,21 @@ import {
   Popover
 } from '@material-ui/core';
 import { useDialog } from '@piximi/hooks';
-import {ConnectedEditCategoryDialog} from "../../../../EditCategoryDialog/ConnectedEditCategoryDialog";
-import {ConnectedDeleteCategoryDialog} from "../../../../DeleteCategoryDialog/ConnectedDeleteCategoryDialog";
+import { ConnectedEditCategoryDialog } from '../../../../EditCategoryDialog/ConnectedEditCategoryDialog';
+import { ConnectedDeleteCategoryDialog } from '../../../../DeleteCategoryDialog/ConnectedDeleteCategoryDialog';
+import { Category } from '@piximi/types';
 
-export const CategoryListItemMenuList = (props: any) => {
+type CategoryListItemMenuListProps = {
+  anchorEl: any;
+  category: Category;
+  categories: Category[];
+  closeMenu: () => void;
+  openedMenu: boolean;
+};
+
+export const CategoryListItemMenuList = (
+  props: CategoryListItemMenuListProps
+) => {
   const { anchorEl, category, closeMenu, openedMenu } = props;
 
   const {

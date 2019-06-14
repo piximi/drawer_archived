@@ -15,10 +15,16 @@ import { makeStyles } from '@material-ui/styles';
 import { useMenu } from '@piximi/hooks';
 import { ConnectedCategoryDropTarget } from '../../CategoryDropTarget/ConnectedCategoryDropTarget';
 import { CategoryListItemMenuList } from '../CategoryListItemMenuList';
+import { Category } from '@piximi/types';
 
 const useStyles = makeStyles(styles);
 
-const VisibleIcon = (props: any) => {
+type VisibleIconProps = {
+  color: string;
+  visible: boolean;
+};
+
+const VisibleIcon = (props: VisibleIconProps) => {
   const { color, visible } = props;
 
   if (visible) {
@@ -28,7 +34,14 @@ const VisibleIcon = (props: any) => {
   }
 };
 
-export const CategoryListItem = (props: any) => {
+type CategoryListItemProps = {
+  categories: Category[];
+  category: Category;
+  isOver: boolean;
+  toggleVisibility: (identifier: string) => void;
+};
+
+export const CategoryListItem = (props: CategoryListItemProps) => {
   const { categories, category, toggleVisibility } = props;
 
   const { anchorEl, openedMenu, openMenu, closeMenu } = useMenu();
