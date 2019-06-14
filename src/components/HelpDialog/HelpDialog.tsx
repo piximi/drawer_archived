@@ -8,7 +8,12 @@ import {
 } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';
 
-export const HelpDialog = (props: any) => {
+type HelpDialogProps = {
+  onClose: () => void;
+  open: boolean;
+}
+
+export const HelpDialog = (props: HelpDialogProps) => {
   const { onClose, open } = props;
 
   const { t: translation } = useTranslation();

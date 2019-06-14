@@ -29,7 +29,13 @@ export const colors = [
   'rgb( 12, 103, 254)' // b, 10s
 ];
 
-export const CreateCategoryDialog = (props: any) => {
+type CreateCategoryDialogProps = {
+  createCategory: (color: string, description: string) => void;
+  open: boolean;
+  onClose: () => void;
+}
+
+export const CreateCategoryDialog = (props: CreateCategoryDialogProps) => {
   const { createCategory, open, onClose } = props;
 
   const [color, setColor] = React.useState<string>('#00e676');

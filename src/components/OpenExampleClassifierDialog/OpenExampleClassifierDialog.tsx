@@ -19,7 +19,14 @@ import { OpenExampleClassifierListItem } from '../Drawer';
 
 const useStyles = makeStyles(styles);
 
-export const OpenExampleClassifierDialog = (props: any) => {
+type OpenExampleClassifierDialogProps = {
+  openClassifier: any;
+  open: any;
+  onClose: any;
+  closeMenu: any;
+}
+
+export const OpenExampleClassifierDialog = (props: OpenExampleClassifierDialogProps) => {
   const classes = useStyles({});
 
   const { t: translation } = useTranslation();
@@ -66,7 +73,7 @@ export const OpenExampleClassifierDialog = (props: any) => {
       <DialogContent classes={{ root: classes.dialogContent }}>
         <List>
           <OpenExampleClassifierListItem
-            src="worms.png"
+            src={WORMS}
             primary="worms"
             secondary="worms"
             onClick={() => {

@@ -7,7 +7,12 @@ import {
   FilenameTextField
 } from '@piximi/components';
 
-export const SaveWeightsDialog = (props: any) => {
+type SaveWeightsDialogProps = {
+  open: any;
+  onClose: any;
+}
+
+export const SaveWeightsDialog = (props: SaveWeightsDialogProps) => {
   const { open, onClose } = props;
 
   const [filename, setFilename] = React.useState<string>('');

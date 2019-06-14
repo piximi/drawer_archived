@@ -8,8 +8,16 @@ import {
   DialogTitle
 } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';
+import {Category} from "@piximi/types";
 
-export const DeleteCategoryDialog = (props: any) => {
+type DeleteCategoryDialogProps = {
+  category: Category;
+  deleteCategory: (identifier: string) => void;
+  open: boolean;
+  onClose: () => void;
+}
+
+export const DeleteCategoryDialog = (props: DeleteCategoryDialogProps) => {
   const { category, deleteCategory, open, onClose } = props;
 
   const onDeleteCategoryClick = () => {

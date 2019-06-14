@@ -4,6 +4,8 @@ import { storiesOf } from '@storybook/react';
 
 import { HelpDialog } from '..';
 
+const onClose = () => {};
+
 storiesOf('HelpDialog', module).add('example', () => (
-  <p>Hello, world!</p>
+  <HelpDialog onClose={onClose} open={true} />
 ));

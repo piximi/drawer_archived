@@ -7,6 +7,7 @@ import {
   CategoryDescriptionTextField
 } from '@piximi/components';
 import * as React from 'react';
+import {Category} from "@piximi/types";
 
 export const colors = [
   'rgb(193,	 53,	19)', // r, 60s
@@ -29,7 +30,15 @@ export const colors = [
   'rgb( 12, 103, 254)' // b, 10s
 ];
 
-export const EditCategoryDialog = (props: any) => {
+type EditCategoryDialogProps = {
+  category: Category;
+  updateColor: (identifier: string, color: string) => void;
+  updateDescription: (identifier: string, description: string) => void;
+  onClose: () => void;
+  open: boolean;
+}
+
+export const EditCategoryDialog = (props: EditCategoryDialogProps) => {
   const { category, updateColor, updateDescription, onClose, open } = props;
 
   const [color, setColor] = React.useState<string>(

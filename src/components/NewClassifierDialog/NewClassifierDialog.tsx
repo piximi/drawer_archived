@@ -8,7 +8,13 @@ import { TextField } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';
 import * as React from 'react';
 
-export const NewClassifierDialog = (props: any) => {
+type NewClassifierDialogProps = {
+  openClassifier: any;
+  openedDialog: any;
+  closeDialog: any;
+}
+
+export const NewClassifierDialog = (props: NewClassifierDialogProps) => {
   const { openClassifier, openedDialog, closeDialog } = props;
 
   const { t: translation } = useTranslation();
