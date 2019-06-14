@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { DeleteCategoryDialog } from './DeleteCategoryDialog';
-import {Category} from "@piximi/types";
+import { Category } from '@piximi/types';
 
 const category: Category = {
   description: 'example',
@@ -18,5 +18,10 @@ const deleteCategory = (identifier: string) => {};
 const onClose = () => {};
 
 storiesOf('DeleteCategoryDialog', module).add('example', () => (
-  <DeleteCategoryDialog category={category} deleteCategory={deleteCategory} open onClose={onClose}/>
+  <DeleteCategoryDialog
+    category={category}
+    deleteCategory={deleteCategory}
+    open
+    onClose={onClose}
+  />
 ));

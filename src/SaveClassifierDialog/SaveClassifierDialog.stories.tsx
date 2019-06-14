@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { SaveClassifierDialog } from './SaveClassifierDialog';
-import { Classifier } from "@piximi/types";
+import { Classifier } from '@piximi/types';
 
 const classifier: Classifier = {
   categories: [],

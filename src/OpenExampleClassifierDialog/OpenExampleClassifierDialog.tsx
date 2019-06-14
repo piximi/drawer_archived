@@ -16,18 +16,24 @@ import { useTranslation } from 'react-i18next';
 // @ts-ignore
 import WORMS from './worms.png';
 import { OpenExampleClassifierListItem } from '../Drawer';
-import {Category, Image} from "@piximi/types";
+import { Category, Image } from '@piximi/types';
 
 const useStyles = makeStyles(styles);
 
 type OpenExampleClassifierDialogProps = {
-  openClassifier: (categories: Category[], images: Image[], name: string) => void;
+  openClassifier: (
+    categories: Category[],
+    images: Image[],
+    name: string
+  ) => void;
   open: boolean;
   onClose: () => void;
   closeMenu: () => void;
-}
+};
 
-export const OpenExampleClassifierDialog = (props: OpenExampleClassifierDialogProps) => {
+export const OpenExampleClassifierDialog = (
+  props: OpenExampleClassifierDialogProps
+) => {
   const classes = useStyles({});
 
   const { t: translation } = useTranslation();
@@ -74,7 +80,7 @@ export const OpenExampleClassifierDialog = (props: OpenExampleClassifierDialogPr
       <DialogContent classes={{ root: classes.dialogContent }}>
         <List>
           <OpenExampleClassifierListItem
-            src='worms.png'
+            src="worms.png"
             primary="worms"
             secondary="worms"
             onClick={() => {

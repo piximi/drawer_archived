@@ -7,5 +7,9 @@ const openClassifier = () => {};
 const closeDialog = () => {};
 
 storiesOf('NewClassifierDialog', module).add('example', () => (
-  <NewClassifierDialog openClassifier={openClassifier} closeDialog={closeDialog} openedDialog={true} />
+  <NewClassifierDialog
+    openClassifier={openClassifier}
+    closeDialog={closeDialog}
+    openedDialog={true}
+  />
 ));

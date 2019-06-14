@@ -10,9 +10,11 @@ import {
 type SaveAnnotationsAndPredictionsDialogProps = {
   open: boolean;
   onClose: () => void;
-}
+};
 
-export const SaveAnnotationsAndPredictionsDialog = (props: SaveAnnotationsAndPredictionsDialogProps) => {
+export const SaveAnnotationsAndPredictionsDialog = (
+  props: SaveAnnotationsAndPredictionsDialogProps
+) => {
   const { open, onClose } = props;
 
   const [filename, setFilename] = React.useState<string>('');

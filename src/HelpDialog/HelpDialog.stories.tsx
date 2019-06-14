@@ -5,5 +5,5 @@ import { HelpDialog } from './HelpDialog';
 const onClose = () => {};
 
 storiesOf('HelpDialog', module).add('example', () => (
-  <HelpDialog onClose={onClose} open/>
+  <HelpDialog onClose={onClose} open />
 ));

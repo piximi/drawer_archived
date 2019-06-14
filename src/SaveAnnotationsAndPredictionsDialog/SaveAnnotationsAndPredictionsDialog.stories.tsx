@@ -7,5 +7,5 @@ import { SaveAnnotationsAndPredictionsDialog } from './SaveAnnotationsAndPredict
 const onClose = () => {};
 
 storiesOf('SaveAnnotationsAndPredictionsDialog', module).add('example', () => (
-  <SaveAnnotationsAndPredictionsDialog onClose={onClose} open/>
+  <SaveAnnotationsAndPredictionsDialog onClose={onClose} open />
 ));

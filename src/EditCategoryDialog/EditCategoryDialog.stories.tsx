@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { EditCategoryDialog } from './EditCategoryDialog';
-import {Category} from "@piximi/types";
+import { Category } from '@piximi/types';
 
 const category: Category = {
   description: 'example',

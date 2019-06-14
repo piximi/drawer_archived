@@ -33,7 +33,7 @@ type CreateCategoryDialogProps = {
   createCategory: (color: string, description: string) => void;
   open: boolean;
   onClose: () => void;
-}
+};
 
 export const CreateCategoryDialog = (props: CreateCategoryDialogProps) => {
   const { createCategory, open, onClose } = props;

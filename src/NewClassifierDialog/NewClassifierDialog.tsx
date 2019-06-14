@@ -12,7 +12,7 @@ type NewClassifierDialogProps = {
   openClassifier: any;
   openedDialog: any;
   closeDialog: any;
-}
+};
 
 export const NewClassifierDialog = (props: NewClassifierDialogProps) => {
   const { openClassifier, openedDialog, closeDialog } = props;

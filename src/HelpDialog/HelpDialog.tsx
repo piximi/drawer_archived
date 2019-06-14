@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next';
 type HelpDialogProps = {
   onClose: () => void;
   open: boolean;
-}
+};
 
 export const HelpDialog = (props: HelpDialogProps) => {
   const { onClose, open } = props;

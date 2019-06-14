@@ -10,7 +10,7 @@ import {
 type SaveWeightsDialogProps = {
   open: boolean;
   onClose: () => void;
-}
+};
 
 export const SaveWeightsDialog = (props: SaveWeightsDialogProps) => {
   const { open, onClose } = props;
