@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { ApplicationList } from './ApplicationList';
+import { SettingsListItem } from './SettingsListItem';
 
-const toggle = () => {};
-
-storiesOf('AppBar', module).add('example', () => <ApplicationList />);
+storiesOf('SettingsListItem', module).add('example', () => (
+  <SettingsListItem />
+));
