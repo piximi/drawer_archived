@@ -4,6 +4,10 @@ import { storiesOf } from '@storybook/react';
 
 import { CreateCategoryDialog } from '..';
 
+const createCategory = (color: string, description: string) => {};
+
+const onClose = () => {};
+
 storiesOf('CreateCategoryDialog', module).add('example', () => (
-  <p>Hello, world!</p>
+  <CreateCategoryDialog createCategory={createCategory} open={true} onClose={onClose}/>
 ));
