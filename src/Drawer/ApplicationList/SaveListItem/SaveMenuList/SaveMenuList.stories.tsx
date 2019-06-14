@@ -6,6 +6,6 @@ const anchorEl = null;
 
 const onClose = () => {};
 
-storiesOf('AppBar', module).add('example', () => (
+storiesOf('SaveMenuList', module).add('example', () => (
   <SaveMenuList anchorEl={anchorEl} onClose={onClose} open />
 ));

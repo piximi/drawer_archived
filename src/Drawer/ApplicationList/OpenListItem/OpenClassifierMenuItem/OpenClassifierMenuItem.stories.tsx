@@ -1,9 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { OpenExampleClassifierMenuItem } from '../OpenExampleClassifierMenuItem';
+import { Provider } from 'react-redux';
+import { store } from '@piximi/store';
+import { OpenClassifierMenuItem } from './OpenClassifierMenuItem';
 
 const closeMenu = () => {};
 
 storiesOf('OpenClassifierMenuItem', module).add('example', () => (
-  <OpenExampleClassifierMenuItem closeMenu={closeMenu} />
+  <Provider store={store}>
+    <OpenClassifierMenuItem />
+  </Provider>
 ));
