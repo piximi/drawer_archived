@@ -74,7 +74,7 @@ export const OpenExampleClassifierDialog = (props: OpenExampleClassifierDialogPr
       <DialogContent classes={{ root: classes.dialogContent }}>
         <List>
           <OpenExampleClassifierListItem
-            src={WORMS}
+            src='worms.png'
             primary="worms"
             secondary="worms"
             onClick={() => {
