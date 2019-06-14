@@ -4,6 +4,8 @@ import { ConnectedCategoryListItem } from './ConnectedCategoryListItem';
 import { Category } from '@piximi/types';
 import { store } from '@piximi/store';
 import { Provider } from 'react-redux';
+import HTML5Backend from 'react-dnd-html5-backend';
+import { DragDropContextProvider } from 'react-dnd';
 
 const category: Category = {
   description: 'example',
@@ -17,6 +19,8 @@ const category: Category = {
 
 storiesOf('CategoryListItem', module).add('example', () => (
   <Provider store={store}>
-    <ConnectedCategoryListItem category={category} isOver={true} />
+    <DragDropContextProvider backend={HTML5Backend}>
+      <ConnectedCategoryListItem category={category} isOver={true} />
+    </DragDropContextProvider>
   </Provider>
 ));

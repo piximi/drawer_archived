@@ -1,7 +1,11 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { CategoryDropTarget } from './CategoryDropTarget';
-import { CategoryListItem } from '../CategoryListItem/CategoryListItem';
+import { ConnectedCategoryDropTarget } from './ConnectedCategoryDropTarget';
+import { ConnectedCategoryListItem } from '../CategoryListItem/CategoryListItem/ConnectedCategoryListItem';
+import HTML5Backend from 'react-dnd-html5-backend';
+import { DragDropContextProvider } from 'react-dnd';
+import { store } from '@piximi/store';
+import { Provider } from 'react-redux';
 
 const category = {
   description: 'example',
@@ -14,13 +18,12 @@ const category = {
   }
 };
 
-const updateImageCategory = () => {};
-
 storiesOf('CategoryDropTarget', module).add('example', () => (
-  <CategoryDropTarget
-    category={category}
-    updateImageCategory={updateImageCategory}
-  >
-    <CategoryListItem />
-  </CategoryDropTarget>
+  <Provider store={store}>
+    <DragDropContextProvider backend={HTML5Backend}>
+      <ConnectedCategoryDropTarget category={category}>
+        <ConnectedCategoryListItem category={category} isOver={true} />
+      </ConnectedCategoryDropTarget>
+    </DragDropContextProvider>
+  </Provider>
 ));
