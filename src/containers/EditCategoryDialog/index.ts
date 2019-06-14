@@ -1,1 +1,0 @@
-export { ConnectedEditCategoryDialog } from './ConnectedEditCategoryDialog';

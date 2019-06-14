@@ -1,3 +1,0 @@
-export {
-  ConnectedOpenExampleClassifierDialog
-} from './ConnectedOpenExampleClassifierDialog';

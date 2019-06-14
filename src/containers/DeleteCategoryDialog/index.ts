@@ -1,1 +1,0 @@
-export { ConnectedDeleteCategoryDialog } from './ConnectedDeleteCategoryDialog';

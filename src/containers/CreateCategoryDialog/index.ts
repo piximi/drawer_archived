@@ -1,1 +1,0 @@
-export { ConnectedCreateCategoryDialog } from './ConnectedCreateCategoryDialog';
