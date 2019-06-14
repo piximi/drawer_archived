@@ -4,6 +4,10 @@ import { storiesOf } from '@storybook/react';
 
 import { NewClassifierDialog } from '..';
 
+const openClassifier = () => {};
+
+const closeDialog = () => {};
+
 storiesOf('NewClassifierDialog', module).add('example', () => (
-  <div/>
+  <NewClassifierDialog openClassifier={openClassifier} closeDialog={closeDialog} openedDialog={true} />
 ));

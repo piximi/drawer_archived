@@ -16,14 +16,15 @@ import { useTranslation } from 'react-i18next';
 // @ts-ignore
 import WORMS from './worms.png';
 import { OpenExampleClassifierListItem } from '../Drawer';
+import {Category, Image} from "@piximi/types";
 
 const useStyles = makeStyles(styles);
 
 type OpenExampleClassifierDialogProps = {
-  openClassifier: any;
-  open: any;
-  onClose: any;
-  closeMenu: any;
+  openClassifier: (categories: Category[], images: Image[], name: string) => void;
+  open: boolean;
+  onClose: () => void;
+  closeMenu: () => void;
 }
 
 export const OpenExampleClassifierDialog = (props: OpenExampleClassifierDialogProps) => {

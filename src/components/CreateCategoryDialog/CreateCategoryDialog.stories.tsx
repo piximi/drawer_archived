@@ -9,5 +9,5 @@ const createCategory = (color: string, description: string) => {};
 const onClose = () => {};
 
 storiesOf('CreateCategoryDialog', module).add('example', () => (
-  <div/>
+  <CreateCategoryDialog createCategory={createCategory} onClose={onClose} open/>
 ));

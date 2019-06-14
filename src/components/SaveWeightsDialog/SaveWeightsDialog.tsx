@@ -8,8 +8,8 @@ import {
 } from '@piximi/components';
 
 type SaveWeightsDialogProps = {
-  open: any;
-  onClose: any;
+  open: boolean;
+  onClose: () => void;
 }
 
 export const SaveWeightsDialog = (props: SaveWeightsDialogProps) => {

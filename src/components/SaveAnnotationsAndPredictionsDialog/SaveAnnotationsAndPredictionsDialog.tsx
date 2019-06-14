@@ -8,8 +8,8 @@ import {
 } from '@piximi/components';
 
 type SaveAnnotationsAndPredictionsDialogProps = {
-  open: any;
-  onClose: any;
+  open: boolean;
+  onClose: () => void;
 }
 
 export const SaveAnnotationsAndPredictionsDialog = (props: SaveAnnotationsAndPredictionsDialogProps) => {
