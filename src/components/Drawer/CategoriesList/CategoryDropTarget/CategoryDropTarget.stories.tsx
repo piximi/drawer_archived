@@ -14,10 +14,5 @@ const category = {
 const updateImageCategory = () => {};
 
 storiesOf('CategoryDropTarget', module).add('example', () => (
-  <CategoryDropTarget
-    category={category}
-    updateImageCategory={updateImageCategory}
-  >
-    <div />
-  </CategoryDropTarget>
+  <div/>
 ));
