@@ -37,11 +37,11 @@ const VisibleIcon = (props: VisibleIconProps) => {
 type CategoryListItemProps = {
   categories: Category[];
   category: Category;
-  isOver: boolean;
+  isOver?: boolean;
   toggleVisibility: (identifier: string) => void;
 };
 
-export const CategoryListItem = (props: CategoryListItemProps) => {
+export const CategoryListItem = (props: any) => {
   const { categories, category, toggleVisibility } = props;
 
   const { anchorEl, openedMenu, openMenu, closeMenu } = useMenu();
