@@ -7,7 +7,12 @@ import { ConnectedCategoriesList } from '../../../containers/Drawer';
 
 const useStyles = makeStyles(styles);
 
-export const Drawer = (props: any) => {
+type DrawerProps = {
+  toggled: boolean,
+  toggle: () => void
+}
+
+export const Drawer = (props: DrawerProps) => {
   const classes = useStyles({});
 
   const { toggled, toggle } = props;
@@ -25,15 +30,15 @@ export const Drawer = (props: any) => {
 
       <ApplicationList />
 
-      <MaterialUI.Divider />
+      <MaterialUI.Divider component={'hr'} />
 
       <ConnectedCategoriesList />
 
-      <MaterialUI.Divider />
+      <MaterialUI.Divider component={'hr'} />
 
       <ClassifierList />
 
-      <MaterialUI.Divider />
+      <MaterialUI.Divider component={'hr'} />
 
       <MiscellaneousList />
     </MaterialUI.Drawer>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { DeleteCategoryDialog } from '..';
+import { DeleteCategoryDialog } from './DeleteCategoryDialog';
 import {Category} from "@piximi/types";
 
 const category: Category = {

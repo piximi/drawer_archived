@@ -7,7 +7,12 @@ import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles(styles);
 
-export const AppBar = (props: any) => {
+type AppBarProps = {
+  toggle: () => void;
+  toggled: boolean;
+}
+
+export const AppBar = (props: AppBarProps) => {
   const { toggle, toggled } = props;
 
   const classes = useStyles({});

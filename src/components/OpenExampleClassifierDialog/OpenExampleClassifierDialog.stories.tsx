@@ -1,9 +1,19 @@
 import React from 'react';
-
 import { storiesOf } from '@storybook/react';
+import { OpenExampleClassifierDialog } from './OpenExampleClassifierDialog';
+import {Category, Image} from "@piximi/types";
 
-import { OpenExampleClassifierDialog } from '..';
+const closeMenu = () => {};
+
+const onClose = () => {};
+
+const openClassifier = (categories: Category[], images: Image[], name: string) => void
 
 storiesOf('OpenExampleClassifierDialog', module).add('example', () => (
-  <div/>
+  <OpenExampleClassifierDialog
+    closeMenu={closeMenu}
+    onClose={onClose}
+    open
+    openClassifier={openClassifier}
+  />
 ));

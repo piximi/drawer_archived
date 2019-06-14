@@ -1,8 +1,6 @@
 import React from 'react';
-
 import { storiesOf } from '@storybook/react';
-
-import { NewClassifierDialog } from '..';
+import { NewClassifierDialog } from './NewClassifierDialog';
 
 const openClassifier = () => {};
 

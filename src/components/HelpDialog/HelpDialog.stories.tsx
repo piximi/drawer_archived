@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { HelpDialog } from '..';
+import { HelpDialog } from './HelpDialog';
 
 const onClose = () => {};
 

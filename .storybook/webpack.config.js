@@ -6,6 +6,8 @@ module.exports = ({ config, mode }) => {
             presets: [['react-app', { flow: false, typescript: true }]],
         },
     });
+
     config.resolve.extensions.push('.ts', '.tsx');
+
     return config;
 };

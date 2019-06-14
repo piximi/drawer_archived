@@ -1,8 +1,6 @@
 import React from 'react';
-
 import { storiesOf } from '@storybook/react';
-
-import { CreateCategoryDialog } from '..';
+import { CreateCategoryDialog } from './CreateCategoryDialog';
 
 const createCategory = (color: string, description: string) => {};
 

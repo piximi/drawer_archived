@@ -1,9 +1,16 @@
 import React from 'react';
-
 import { storiesOf } from '@storybook/react';
+import { SaveClassifierDialog } from './SaveClassifierDialog';
+import {Category, Classifier} from "@piximi/types";
 
-import { SaveClassifierDialog } from '..';
+const classifier: Classifier = {
+  categories: [],
+  images: [],
+  name: 'example'
+};
+
+const onClose = () => {};
 
 storiesOf('SaveClassifierDialog', module).add('example', () => (
-  <div/>
+  <SaveClassifierDialog classifier={classifier} onClose={onClose} open />
 ));
