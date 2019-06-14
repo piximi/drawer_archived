@@ -1,15 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { CreateCategoryDialog } from './CreateCategoryDialog';
-
-const createCategory = (color: string, description: string) => {};
+import { ConnectedCreateCategoryDialog } from './ConnectedCreateCategoryDialog';
+import { store } from '@piximi/store';
+import { Provider } from 'react-redux';
 
 const onClose = () => {};
 
 storiesOf('CreateCategoryDialog', module).add('example', () => (
-  <CreateCategoryDialog
-    createCategory={createCategory}
-    onClose={onClose}
-    open
-  />
+  <Provider store={store}>
+    <ConnectedCreateCategoryDialog open onClose={onClose} />
+  </Provider>
 ));

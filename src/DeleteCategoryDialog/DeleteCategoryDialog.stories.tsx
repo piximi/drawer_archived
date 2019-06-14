@@ -1,7 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { DeleteCategoryDialog } from './DeleteCategoryDialog';
+import { ConnectedDeleteCategoryDialog } from './ConnectedDeleteCategoryDialog';
 import { Category } from '@piximi/types';
+import { store } from '@piximi/store';
+import { Provider } from 'react-redux';
 
 const category: Category = {
   description: 'example',
@@ -13,15 +15,10 @@ const category: Category = {
   }
 };
 
-const deleteCategory = (identifier: string) => {};
-
 const onClose = () => {};
 
 storiesOf('DeleteCategoryDialog', module).add('example', () => (
-  <DeleteCategoryDialog
-    category={category}
-    deleteCategory={deleteCategory}
-    open
-    onClose={onClose}
-  />
+  <Provider store={store}>
+    <ConnectedDeleteCategoryDialog category={category} open onClose={onClose} />
+  </Provider>
 ));
