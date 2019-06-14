@@ -10,7 +10,7 @@ const useStyles = makeStyles(styles);
 type AppBarProps = {
   toggle: () => void;
   toggled: boolean;
-}
+};
 
 export const AppBar = (props: AppBarProps) => {
   const { toggle, toggled } = props;

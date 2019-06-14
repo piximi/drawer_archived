@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import {CategoryDropTarget} from "./CategoryDropTarget";
-import {CategoryListItem} from "../CategoryListItem/CategoryListItem";
+import { CategoryDropTarget } from './CategoryDropTarget';
+import { CategoryListItem } from '../CategoryListItem/CategoryListItem';
 
 const category = {
   description: 'example',
@@ -17,7 +17,10 @@ const category = {
 const updateImageCategory = () => {};
 
 storiesOf('CategoryDropTarget', module).add('example', () => (
-  <CategoryDropTarget category={category} updateImageCategory={updateImageCategory}>
-    <CategoryListItem/>
+  <CategoryDropTarget
+    category={category}
+    updateImageCategory={updateImageCategory}
+  >
+    <CategoryListItem />
   </CategoryDropTarget>
 ));

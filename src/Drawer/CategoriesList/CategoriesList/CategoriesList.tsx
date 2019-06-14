@@ -13,11 +13,11 @@ import * as _ from 'lodash';
 import { useTranslation } from 'react-i18next';
 import { ConnectedCategoryListItem } from '../CategoryListItem/CategoryListItem/ConnectedCategoryListItem';
 import { CreateCategoryListItem } from '../CreateCategoryListItem';
-import {Category} from "@piximi/types";
+import { Category } from '@piximi/types';
 
 type CategoriesListProps = {
-  categories: Category[]
-}
+  categories: Category[];
+};
 
 export const CategoriesList = (props: CategoriesListProps) => {
   const { collapsedList, collapseList } = useCollapseList();

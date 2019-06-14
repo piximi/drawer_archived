@@ -2,15 +2,20 @@ import * as MaterialUI from '@material-ui/core';
 import * as React from 'react';
 import styles from './Drawer.css';
 import { makeStyles } from '@material-ui/styles';
-import { AppBar, ApplicationList, ClassifierList, MiscellaneousList } from '../index';
+import {
+  AppBar,
+  ApplicationList,
+  ClassifierList,
+  MiscellaneousList
+} from '../index';
 import { ConnectedCategoriesList } from '../CategoriesList/CategoriesList/ConnectedCategoriesList';
 
 const useStyles = makeStyles(styles);
 
 type DrawerProps = {
-  toggled: boolean,
-  toggle: () => void
-}
+  toggled: boolean;
+  toggle: () => void;
+};
 
 export const Drawer = (props: DrawerProps) => {
   const classes = useStyles({});
@@ -32,7 +37,7 @@ export const Drawer = (props: DrawerProps) => {
 
       <MaterialUI.Divider component={'hr'} />
 
-      <ConnectedCategoriesList/>
+      <ConnectedCategoriesList />
 
       <MaterialUI.Divider component={'hr'} />
 

@@ -1,6 +1,10 @@
 import * as React from 'react';
 import * as MaterialUI from '@material-ui/core';
-import { HelpListItem, SendFeedbackListItem, SettingsListItem } from '../../index';
+import {
+  HelpListItem,
+  SendFeedbackListItem,
+  SettingsListItem
+} from '../../index';
 
 export const MiscellaneousList = () => {
   return (
