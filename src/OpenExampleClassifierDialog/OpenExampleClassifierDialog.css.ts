@@ -1,7 +1,7 @@
 import { createStyles } from '@material-ui/styles';
 import { Theme } from '@material-ui/core';
 
-const styles = (theme: Theme) =>
+export const styles = (theme: Theme) =>
   createStyles({
     closeButton: {
       color: theme.palette.grey[500],
@@ -24,5 +24,3 @@ const styles = (theme: Theme) =>
       padding: theme.spacing(2)
     }
   });
-
-export default styles;

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import axios from 'axios';
-import styles from './OpenExampleClassifierDialog.css';
+import { styles } from './OpenExampleClassifierDialog.css';
 import {
   Dialog,
   DialogActions,

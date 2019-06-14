@@ -2,7 +2,7 @@ import { keyframes } from 'styled-components';
 import Color from 'color';
 import { createStyles } from '@material-ui/styles';
 
-const styles = () =>
+export const styles = () =>
   createStyles({
     icon: {
       color: 'rgba(0,0,0,0.50)',
@@ -16,7 +16,7 @@ const styles = () =>
     }
   });
 
-const pulseAnimation = (color: any) => {
+export const pulseAnimation = (color: any) => {
   return keyframes`
   0% {
     box-shadow: 0px 0px 0px 0px ${Color(color)
@@ -44,7 +44,7 @@ const pulseAnimation = (color: any) => {
 `;
 };
 
-const pulseAnimation2 = (color: any) => {
+export const pulseAnimation2 = (color: any) => {
   return keyframes`
   0% {
     box-shadow: 0px 0px 0px 0px ${Color(color)
@@ -71,6 +71,3 @@ const pulseAnimation2 = (color: any) => {
   }
 `;
 };
-
-export { pulseAnimation, pulseAnimation2 };
-export default styles;

@@ -10,7 +10,7 @@ import LabelIcon from '@material-ui/icons/Label';
 import LabelOutlinedIcon from '@material-ui/icons/LabelOutlined';
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
 import StyledCategory from './StyledCategory';
-import styles from './CategoryListItem.css';
+import { styles } from './CategoryListItem.css';
 import { makeStyles } from '@material-ui/styles';
 import { useMenu } from '@piximi/hooks';
 import { ConnectedCategoryDropTarget } from '../../CategoryDropTarget/ConnectedCategoryDropTarget';

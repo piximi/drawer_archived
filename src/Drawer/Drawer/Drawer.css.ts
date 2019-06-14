@@ -3,7 +3,7 @@ import { Theme } from '@material-ui/core';
 
 const drawerWidth = 280;
 
-const styles = (theme: Theme) =>
+export const styles = (theme: Theme) =>
   createStyles({
     appBar: {
       borderBottom: '1px solid rgba(0, 0, 0, 0.12)',
@@ -29,5 +29,3 @@ const styles = (theme: Theme) =>
     },
     toolbar: theme.mixins.toolbar
   });
-
-export default styles;

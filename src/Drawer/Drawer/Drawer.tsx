@@ -1,6 +1,6 @@
 import * as MaterialUI from '@material-ui/core';
 import * as React from 'react';
-import styles from './Drawer.css';
+import { styles } from './Drawer.css';
 import { makeStyles } from '@material-ui/styles';
 import {
   AppBar,
