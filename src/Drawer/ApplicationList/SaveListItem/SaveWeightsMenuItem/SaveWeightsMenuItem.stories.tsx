@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { ApplicationList } from './ApplicationList';
+import { SaveWeightsMenuItem } from './SaveWeightsMenuItem';
 
-const toggle = () => {};
-
-storiesOf('AppBar', module).add('example', () => <ApplicationList />);
+storiesOf('SaveWeightsMenuItem', module).add('example', () => (
+  <SaveWeightsMenuItem />
+));

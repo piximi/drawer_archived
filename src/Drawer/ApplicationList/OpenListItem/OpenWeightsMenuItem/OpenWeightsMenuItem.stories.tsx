@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { ApplicationList } from './ApplicationList';
+import { OpenWeightsMenuItem } from './OpenWeightsMenuItem';
 
-const toggle = () => {};
-
-storiesOf('AppBar', module).add('example', () => <ApplicationList />);
+storiesOf('OpenWeightsMenuItem', module).add('example', () => (
+  <OpenWeightsMenuItem />
+));

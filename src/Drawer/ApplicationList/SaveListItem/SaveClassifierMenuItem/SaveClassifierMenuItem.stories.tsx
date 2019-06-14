@@ -1,7 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { ApplicationList } from './ApplicationList';
+import { SaveClassifierMenuItem } from './SaveClassifierMenuItem';
 
 const toggle = () => {};
 
-storiesOf('AppBar', module).add('example', () => <ApplicationList />);
+storiesOf('SaveClassifierMenuItem', module).add('example', () => (
+  <SaveClassifierMenuItem />
+));

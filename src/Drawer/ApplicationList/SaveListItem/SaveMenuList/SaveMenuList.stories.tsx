@@ -1,7 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { ApplicationList } from './ApplicationList';
+import { SaveMenuList } from './SaveMenuList';
 
-const toggle = () => {};
+const anchorEl = null;
 
-storiesOf('AppBar', module).add('example', () => <ApplicationList />);
+const onClose = () => {};
+
+storiesOf('AppBar', module).add('example', () => (
+  <SaveMenuList anchorEl={anchorEl} onClose={onClose} open />
+));
