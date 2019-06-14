@@ -1,9 +1,5 @@
-export {
-  SaveAnnotationsAndPredictionsMenuItem
-} from './SaveAnnotationsAndPredictionsMenuItem/SaveAnnotationsAndPredictionsMenuItem';
-export {
-  SaveClassifierMenuItem
-} from './SaveClassifierMenuItem/SaveClassifierMenuItem';
-export { SaveListItem } from './SaveListItem/SaveListItem';
-export { SaveMenuList } from './SaveMenuList/SaveMenuList';
-export { SaveWeightsMenuItem } from './SaveWeightsMenuItem/SaveWeightsMenuItem';
+export { SaveAnnotationsAndPredictionsMenuItem } from './SaveAnnotationsAndPredictionsMenuItem';
+export { SaveClassifierMenuItem } from './SaveClassifierMenuItem';
+export { SaveListItem } from './SaveListItem';
+export { SaveMenuList } from './SaveMenuList';
+export { SaveWeightsMenuItem } from './SaveWeightsMenuItem';

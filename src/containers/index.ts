@@ -1,17 +1,17 @@
 export {
   ConnectedCategoriesList
-} from './Drawer/CategoriesList/CategoriesList/ConnectedCategoriesList';
+} from '../components/Drawer/CategoriesList/CategoriesList/ConnectedCategoriesList';
 export {
   ConnectedCategoryListItem
-} from './Drawer/CategoriesList/CategoryListItem/ConnectedCategoryListItem';
+} from '../components/Drawer/CategoriesList/CategoryListItem/CategoryListItem/ConnectedCategoryListItem';
 export { ConnectedCreateCategoryDialog } from './CreateCategoryDialog';
 export { ConnectedDeleteCategoryDialog } from './DeleteCategoryDialog';
 export {
   ConnectedEvaluateListItem
-} from './Drawer/ClassifierList/EvaluateListItem/ConnectedEvaluateListItem';
+} from '../components/Drawer/ClassifierList/EvaluateListItem/ConnectedEvaluateListItem';
 export {
   ConnectedFitListItem
-} from './Drawer/ClassifierList/FitListItem/ConnectedFitListItem';
+} from '../components/Drawer/ClassifierList/FitListItem/ConnectedFitListItem';
 export { ConnectedEditCategoryDialog } from './EditCategoryDialog';
 export { ConnectedNewClassifierDialog } from './NewClassifierDialog';
 export {
@@ -20,8 +20,8 @@ export {
 export { ConnectedOpenClassifierMenuItem } from './Drawer';
 export {
   ConnectedOpenListItem
-} from './Drawer/ApplicationList/OpenListItem/OpenListItem/ConnectedOpenListItem';
+} from '../components/Drawer/ApplicationList/OpenListItem/OpenListItem/ConnectedOpenListItem';
 export { ConnectedSaveClassifierDialog } from './SaveClassifierDialog';
 export {
   ConnectedSaveListItem
-} from './Drawer/ApplicationList/SaveListItem/ConnectedSaveListItem';
+} from '../components/Drawer/ApplicationList/SaveListItem/SaveListItem/ConnectedSaveListItem';

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { Classifier } from '@piximi/types';
-import { SaveListItem } from '../../../../components/Drawer';
+import { EvaluateListItem } from '../../index';
 
 type State = {
   classifier: Classifier;
@@ -9,8 +9,11 @@ type State = {
 const mapStateToProps = (state: State) => {
   return {
     categories: state.classifier.categories,
+    classifier: state.classifier,
     images: state.classifier.images
   };
 };
 
-export const ConnectedSaveListItem = connect(mapStateToProps)(SaveListItem);
+export const ConnectedEvaluateListItem = connect(mapStateToProps)(
+  EvaluateListItem
+);

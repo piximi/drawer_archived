@@ -1,24 +1,24 @@
 export {
   ConnectedCategoriesList
-} from './CategoriesList/CategoriesList/ConnectedCategoriesList';
+} from '../../components/Drawer/CategoriesList/CategoriesList/ConnectedCategoriesList';
 export {
   ConnectedCategoryListItem
-} from './CategoriesList/CategoryListItem/ConnectedCategoryListItem';
+} from '../../components/Drawer/CategoriesList/CategoryListItem/CategoryListItem/ConnectedCategoryListItem';
 export {
   ConnectedEvaluateListItem
-} from './ClassifierList/EvaluateListItem/ConnectedEvaluateListItem';
+} from '../../components/Drawer/ClassifierList/EvaluateListItem/ConnectedEvaluateListItem';
 export {
   ConnectedFitListItem
-} from './ClassifierList/FitListItem/ConnectedFitListItem';
+} from '../../components/Drawer/ClassifierList/FitListItem/ConnectedFitListItem';
 export {
   ConnectedOpenClassifierMenuItem
-} from './ApplicationList/OpenListItem/OpenExampleClassifierMenuItem/ConnectedOpenClassifierMenuItem';
+} from '../../components/Drawer/ApplicationList/OpenListItem/OpenClassifierMenuItem/ConnectedOpenClassifierMenuItem';
 export {
   ConnectedOpenListItem
-} from './ApplicationList/OpenListItem/OpenListItem/ConnectedOpenListItem';
+} from '../../components/Drawer/ApplicationList/OpenListItem/OpenListItem/ConnectedOpenListItem';
 export {
   ConnectedSaveListItem
-} from './ApplicationList/SaveListItem/ConnectedSaveListItem';
+} from '../../components/Drawer/ApplicationList/SaveListItem/SaveListItem/ConnectedSaveListItem';
 export {
   ConnectedCategoryDropTarget
-} from './CategoriesList/CategoryDropTarget/ConnectedCategoryDropTarget';
+} from '../../components/Drawer/CategoriesList/CategoryDropTarget/ConnectedCategoryDropTarget';

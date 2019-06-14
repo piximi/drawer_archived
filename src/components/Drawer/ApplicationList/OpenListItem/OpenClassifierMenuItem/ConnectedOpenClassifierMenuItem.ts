@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { OpenClassifierMenuItem } from '../../../../../components/Drawer/ApplicationList/OpenListItem';
+import { OpenClassifierMenuItem } from './OpenClassifierMenuItem';
 import { Category, Image, Classifier } from '@piximi/types';
 import { Dispatch } from 'redux';
 import { openClassifierAction } from '@piximi/store';

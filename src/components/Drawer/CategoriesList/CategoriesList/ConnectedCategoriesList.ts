@@ -1,12 +1,11 @@
 import { connect } from 'react-redux';
 import {
   toggleCategoryVisibilityAction,
-  updateCategoryVisibilityAction,
-  updateImageCategoryAction
+  updateCategoryVisibilityAction
 } from '@piximi/store';
 import { Classifier } from '@piximi/types';
 import { Dispatch } from 'redux';
-import { CategoryListItem } from '../../../../components/Drawer';
+import { CategoriesList } from "./CategoriesList";
 
 type State = {
   classifier: Classifier;
@@ -27,16 +26,6 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
 
       dispatch(action);
     },
-    updateImageCategory: (identifier: string, categoryIdentifier: string) => {
-      const payload = {
-        categoryIdentifier: categoryIdentifier,
-        identifier: identifier
-      };
-
-      const action = updateImageCategoryAction(payload);
-
-      dispatch(action);
-    },
     updateVisibility: (identifier: string, visible: boolean) => {
       const payload = { identifier: identifier, visible: visible };
 
@@ -47,7 +36,7 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
   };
 };
 
-export const ConnectedCategoryListItem = connect(
+export const ConnectedCategoriesList = connect(
   mapStateToProps,
   mapDispatchToProps
-)(CategoryListItem);
+)(CategoriesList);
