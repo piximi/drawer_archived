@@ -13,13 +13,18 @@ import * as _ from 'lodash';
 import { useTranslation } from 'react-i18next';
 import { ConnectedCategoryListItem } from '../../../../containers';
 import { CreateCategoryListItem } from '..';
+import {Category} from "@piximi/types";
 
-export const CategoriesList = (props: any) => {
+type CategoriesListProps = {
+  categories: Category[]
+}
+
+export const CategoriesList = (props: CategoriesListProps) => {
   const { collapsedList, collapseList } = useCollapseList();
 
   const { t: translation } = useTranslation();
 
-  const { categories, connectDropTarget } = props;
+  const { categories } = props;
 
   const [unknown, known] = _.partition(categories, category => {
     if (category.identifier === '00000000-0000-0000-0000-000000000000') {
@@ -45,7 +50,6 @@ export const CategoriesList = (props: any) => {
             category={category}
             key={category.identifier}
             index={index}
-            connectDropTarget={connectDropTarget}
           />
         ))}
 

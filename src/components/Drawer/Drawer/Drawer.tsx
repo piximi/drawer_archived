@@ -32,7 +32,7 @@ export const Drawer = (props: DrawerProps) => {
 
       <MaterialUI.Divider component={'hr'} />
 
-      <ConnectedCategoriesList />
+      <ConnectedCategoriesList/>
 
       <MaterialUI.Divider component={'hr'} />
 
