@@ -11,8 +11,8 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { useCollapseList } from '@piximi/hooks';
 import * as _ from 'lodash';
 import { useTranslation } from 'react-i18next';
-import { ConnectedCategoryListItem } from '../../../../containers/Drawer';
-import { CreateCategoryListItem } from '../..';
+import { ConnectedCategoryListItem } from '../../../../containers';
+import { CreateCategoryListItem } from '..';
 
 export const CategoriesList = (props: any) => {
   const { collapsedList, collapseList } = useCollapseList();

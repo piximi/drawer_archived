@@ -4,9 +4,9 @@ import { NewClassifierListItem } from '../..';
 import {
   ConnectedOpenListItem,
   ConnectedSaveListItem
-} from '../../../../containers/Drawer';
+} from '../../../../containers';
 
-export const ApplicationList = (props: any) => {
+export const ApplicationList = () => {
   return (
     <MaterialUI.List dense>
       <NewClassifierListItem />

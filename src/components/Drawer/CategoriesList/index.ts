@@ -1,11 +1,5 @@
-export { CategoriesList } from './CategoriesList/CategoriesList';
-export {
-  CategoryListItem
-} from './CategoryListItem/CategoryListItem/CategoryListItem';
-export {
-  CategoryListItemMenuList
-} from './CategoryListItem/CategoryListItemMenuList/CategoryListItemMenuList';
-
-export {
-  CreateCategoryListItem
-} from './CreateCategoryListItem/CreateCategoryListItem';
+export { CategoriesList } from './CategoriesList';
+export { CategoryListItem } from './CategoryListItem';
+export { CategoryListItemMenuList } from './CategoryListItem';
+export { CreateCategoryListItem } from './CreateCategoryListItem';
+export { CategoryDropTarget } from './CategoryDropTarget';

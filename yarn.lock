@@ -1399,10 +1399,10 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@piximi/components@^0.1.11":
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/@piximi/components/-/components-0.1.11.tgz#4ab74e563cb61bb5b2022601a5133a2dd19d19ec"
-  integrity sha512-hx1eoMl8R4zNyl3/fkqTAG6dosJulpaFpXCHxv+tIyGjL3hljKr25DcKzqlZJ09mgNVNhm6yJsdt8IsxpiteTA==
+"@piximi/components@^0.1.12":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@piximi/components/-/components-0.1.12.tgz#2ce6ff9d2bff69574fb0e61ce8c907a736034a4a"
+  integrity sha512-8mlLbNEaZbajSAO/2RSIbVBUAUTkbllt7scQT6osKHthQUl1srLTfWz1a4AjT/yEQP/SlTy0u21AaHZBH1MDfQ==
   dependencies:
     "@material-ui/core" "^3.9.3"
     "@material-ui/icons" "^3.0.2"
@@ -1413,8 +1413,8 @@
     "@types/react-dom" "^16.8.4"
     react "^16.8.6"
     react-color "^2.17.3"
-    react-dnd "^7.4.5"
-    react-dnd-html5-backend "^7.4.4"
+    react-dnd "^7.6.0"
+    react-dnd-html5-backend "^7.6.0"
     react-dom "^16.8.6"
     react-i18next "^10.9.0"
     typescript "^3.4.5"
@@ -8992,14 +8992,14 @@ react-dev-utils@^9.0.0:
     strip-ansi "5.2.0"
     text-table "0.2.0"
 
-react-dnd-html5-backend@^7.4.4:
+react-dnd-html5-backend@^7.4.4, react-dnd-html5-backend@^7.6.0:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/react-dnd-html5-backend/-/react-dnd-html5-backend-7.6.0.tgz#28ad71f2a2a76be791c9dd5858bf28bcc7ed17af"
   integrity sha512-lUbBTMwaHeq7k0zXJwFXRlctHpdY7x7V+n4k+XFDStbWAHQd9phYaTVpvbZZbkf2Wt0sabeerhcuJhdeOLylFw==
   dependencies:
     dnd-core "^7.6.0"
 
-react-dnd@^7.4.5:
+react-dnd@^7.6.0:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/react-dnd/-/react-dnd-7.6.0.tgz#b83f469e0d8a038b7b8c5a9cf85cdc7462a01cd9"
   integrity sha512-PLxMBsG4ee9Wz3kGeD3wTOUvfFAk7/DjxfXaC/E6nqO3iMowpxLr3TRPTjeDQALPv50HzGLo/3dJnEmzHsz33g==
