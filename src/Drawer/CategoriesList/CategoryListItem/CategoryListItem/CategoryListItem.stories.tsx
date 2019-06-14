@@ -2,6 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { ConnectedCategoryListItem } from './ConnectedCategoryListItem';
 import { Category } from '@piximi/types';
+import { store } from '@piximi/store';
+import { Provider } from 'react-redux';
 
 const category: Category = {
   description: 'example',
@@ -14,5 +16,7 @@ const category: Category = {
 };
 
 storiesOf('CategoryListItem', module).add('example', () => (
-  <ConnectedCategoryListItem category={category} isOver={true} />
+  <Provider store={store}>
+    <ConnectedCategoryListItem category={category} isOver={true} />
+  </Provider>
 ));
