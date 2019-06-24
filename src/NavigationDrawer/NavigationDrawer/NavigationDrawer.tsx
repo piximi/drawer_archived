@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { styles } from './ApplicationDrawer.css';
+import { styles } from './NavigationDrawer.css';
 import { makeStyles } from '@material-ui/styles';
 import {
   ApplicationList,
   ClassifierList,
-  DrawerAppBar,
+  NavigationDrawerAppBar,
   MiscellaneousList
 } from '../index';
 import { ConnectedCategoriesList } from '../CategoriesList/CategoriesList/ConnectedCategoriesList';
@@ -17,7 +17,7 @@ type DrawerProps = {
   toggle: () => void;
 };
 
-export const ApplicationDrawer = (props: DrawerProps) => {
+export const NavigationDrawer = (props: DrawerProps) => {
   const classes = useStyles({});
 
   const { toggled, toggle } = props;
@@ -36,7 +36,7 @@ export const ApplicationDrawer = (props: DrawerProps) => {
         px={8}
       />
 
-      <DrawerAppBar toggle={toggle} toggled={toggled} />
+      <NavigationDrawerAppBar toggle={toggle} toggled={toggled} />
 
       <ApplicationList />
 

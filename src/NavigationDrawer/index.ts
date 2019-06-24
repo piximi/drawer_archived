@@ -1,15 +1,15 @@
-export { DrawerAppBar } from './DrawerAppBar';
 export { ApplicationList } from './ApplicationList';
 export { CategoriesList } from './CategoriesList';
 export { CategoryListItem } from './CategoriesList';
 export { CategoryListItemMenuList } from './CategoriesList';
 export { ClassifierList } from './ClassifierList';
 export { CreateCategoryListItem } from './CategoriesList';
-export { ApplicationDrawer } from './ApplicationDrawer';
 export { EvaluateListItem } from './ClassifierList';
 export { FitListItem } from './ClassifierList';
 export { HelpListItem } from './MiscellaneousList';
 export { MiscellaneousList } from './MiscellaneousList';
+export { NavigationDrawer } from './NavigationDrawer';
+export { NavigationDrawerAppBar } from './NavigationDrawerAppBar';
 export { NewClassifierListItem } from './ApplicationList';
 export { OpenClassifierMenuItem } from './ApplicationList';
 export { OpenExampleClassifierListItem } from './ApplicationList';

@@ -1,6 +1,6 @@
 export { CreateCategoryDialog } from './CreateCategoryDialog';
 export { DeleteCategoryDialog } from './DeleteCategoryDialog';
-export { ApplicationDrawer } from './Drawer';
+export { NavigationDrawer } from './NavigationDrawer';
 export { EditCategoryDialog } from './EditCategoryDialog';
 export { HelpDialog } from './HelpDialog';
 export { NewClassifierDialog } from './NewClassifierDialog';

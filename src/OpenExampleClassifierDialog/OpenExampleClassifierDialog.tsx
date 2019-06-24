@@ -14,7 +14,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import { makeStyles } from '@material-ui/styles';
 import { useTranslation } from 'react-i18next';
 // @ts-ignore
-import { OpenExampleClassifierListItem } from '../Drawer';
+import { OpenExampleClassifierListItem } from '../NavigationDrawer';
 import { Category, Image } from '@piximi/types';
 
 const useStyles = makeStyles(styles);

@@ -2,10 +2,10 @@ import * as React from 'react';
 import {
   CategoryDescriptionTextField,
   ColorIconButton,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle
+  AlertDialog,
+  AlertDialogActions,
+  AlertDialogContent,
+  AlertDialogTitle
 } from '@piximi/components';
 
 export const colors = [
@@ -58,10 +58,10 @@ export const CreateCategoryDialog = (props: CreateCategoryDialogProps) => {
   };
 
   return (
-    <Dialog open={open} onClose={onClose}>
-      <DialogTitle title="Create a new category" />
+    <AlertDialog open={open} onClose={onClose}>
+      <AlertDialogTitle title="Create a new category" />
 
-      <DialogContent>
+      <AlertDialogContent>
         <ColorIconButton
           color={color}
           colors={colors}
@@ -72,14 +72,14 @@ export const CreateCategoryDialog = (props: CreateCategoryDialogProps) => {
           description={description}
           onDescriptionChange={onDescriptionChange}
         />
-      </DialogContent>
+      </AlertDialogContent>
 
-      <DialogActions
+      <AlertDialogActions
         acceptanceTitle="Create"
         cancellationTitle="Cancel"
         onAcceptance={onAcceptance}
         onCancellation={onClose}
       />
-    </Dialog>
+    </AlertDialog>
   );
 };

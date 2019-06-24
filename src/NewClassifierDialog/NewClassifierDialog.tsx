@@ -1,8 +1,8 @@
 import {
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle
+  AlertDialog,
+  AlertDialogActions,
+  AlertDialogContent,
+  AlertDialogTitle
 } from '@piximi/components';
 import { TextField } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';
@@ -32,10 +32,10 @@ export const NewClassifierDialog = (props: NewClassifierDialogProps) => {
   };
 
   return (
-    <Dialog open={openedDialog} onClose={closeDialog}>
-      <DialogTitle title={'Create new classifier'} />
+    <AlertDialog open={openedDialog} onClose={closeDialog}>
+      <AlertDialogTitle title={'Create new classifier'} />
 
-      <DialogContent>
+      <AlertDialogContent>
         <TextField
           autoFocus
           fullWidth
@@ -46,14 +46,14 @@ export const NewClassifierDialog = (props: NewClassifierDialogProps) => {
           placeholder={translation('Untitled classifier')}
           type="text"
         />
-      </DialogContent>
+      </AlertDialogContent>
 
-      <DialogActions
+      <AlertDialogActions
         acceptanceTitle={'Create'}
         cancellationTitle={'Cancel'}
         onAcceptance={onCreateClassifierClick}
         onCancellation={closeDialog}
       />
-    </Dialog>
+    </AlertDialog>
   );
 };

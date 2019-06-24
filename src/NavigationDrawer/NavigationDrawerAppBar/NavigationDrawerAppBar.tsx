@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { styles } from './DrawerAppBar.css';
+import { styles } from './NavigationDrawerAppBar.css';
 
 import classNames from 'classnames';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -19,7 +19,7 @@ type AppBarProps = {
   toggled: boolean;
 };
 
-export const DrawerAppBar = (props: AppBarProps) => {
+export const NavigationDrawerAppBar = (props: AppBarProps) => {
   const { toggle, toggled } = props;
 
   const classes = useStyles({});

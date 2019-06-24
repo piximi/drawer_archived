@@ -1,1 +1,0 @@
-export { SaveAnnotationsAndPredictionsMenuItem } from './SaveAnnotationsAndPredictionsMenuItem';

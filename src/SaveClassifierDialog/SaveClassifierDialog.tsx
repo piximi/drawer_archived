@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { saveAs } from 'file-saver';
 import {
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle,
+  AlertDialog,
+  AlertDialogActions,
+  AlertDialogContent,
+  AlertDialogTitle,
   FilenameTextField
 } from '@piximi/components';
 import { Classifier } from '@piximi/types';
@@ -46,22 +46,22 @@ export const SaveClassifierDialog = (props: SaveClassifierDialogProps) => {
   };
 
   return (
-    <Dialog open={open} onClose={onClose}>
-      <DialogTitle title="Save classifier" />
+    <AlertDialog open={open} onClose={onClose}>
+      <AlertDialogTitle title="Save classifier" />
 
-      <DialogContent>
+      <AlertDialogContent>
         <FilenameTextField
           filename={filename}
           onFilenameChange={onFilenameChange}
         />
-      </DialogContent>
+      </AlertDialogContent>
 
-      <DialogActions
+      <AlertDialogActions
         acceptanceTitle="Save"
         cancellationTitle="Cancel"
         onAcceptance={onAcceptance}
         onCancellation={onClose}
       />
-    </Dialog>
+    </AlertDialog>
   );
 };

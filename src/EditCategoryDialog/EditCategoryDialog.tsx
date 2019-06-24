@@ -1,10 +1,10 @@
 import {
   CategoryDescriptionTextField,
   ColorIconButton,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle
+  AlertDialog,
+  AlertDialogActions,
+  AlertDialogContent,
+  AlertDialogTitle
 } from '@piximi/components';
 import * as React from 'react';
 import { Category } from '@piximi/types';
@@ -68,10 +68,10 @@ export const EditCategoryDialog = (props: EditCategoryDialogProps) => {
   };
 
   return (
-    <Dialog open={open} onClose={onClose}>
-      <DialogTitle title="Edit category" />
+    <AlertDialog open={open} onClose={onClose}>
+      <AlertDialogTitle title="Edit category" />
 
-      <DialogContent>
+      <AlertDialogContent>
         <ColorIconButton
           color={color}
           colors={colors}
@@ -82,14 +82,14 @@ export const EditCategoryDialog = (props: EditCategoryDialogProps) => {
           description={description}
           onDescriptionChange={onDescriptionChange}
         />
-      </DialogContent>
+      </AlertDialogContent>
 
-      <DialogActions
+      <AlertDialogActions
         acceptanceTitle="Edit"
         cancellationTitle="Cancel"
         onAcceptance={onAcceptance}
         onCancellation={onClose}
       />
-    </Dialog>
+    </AlertDialog>
   );
 };

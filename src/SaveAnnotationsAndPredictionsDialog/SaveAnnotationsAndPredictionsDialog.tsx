@@ -1,9 +1,9 @@
 import * as React from 'react';
 import {
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle,
+  AlertDialog,
+  AlertDialogActions,
+  AlertDialogContent,
+  AlertDialogTitle,
   FilenameTextField
 } from '@piximi/components';
 
@@ -30,22 +30,22 @@ export const SaveAnnotationsAndPredictionsDialog = (
   };
 
   return (
-    <Dialog open={open} onClose={onClose}>
-      <DialogTitle title="Save annotations and predictions" />
+    <AlertDialog open={open} onClose={onClose}>
+      <AlertDialogTitle title="Save annotations and predictions" />
 
-      <DialogContent>
+      <AlertDialogContent>
         <FilenameTextField
           filename={filename}
           onFilenameChange={onFilenameChange}
         />
-      </DialogContent>
+      </AlertDialogContent>
 
-      <DialogActions
+      <AlertDialogActions
         acceptanceTitle="Save"
         cancellationTitle="Cancel"
         onAcceptance={onAcceptance}
         onCancellation={onClose}
       />
-    </Dialog>
+    </AlertDialog>
   );
 };
