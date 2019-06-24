@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { AppBar } from './AppBar';
+import { DrawerAppBar } from './DrawerAppBar';
 import { ThemeProvider } from '@material-ui/styles';
 import { createMuiTheme } from '@material-ui/core';
 
@@ -12,8 +12,8 @@ const theme = createMuiTheme({
 
 const toggle = () => {};
 
-storiesOf('AppBar', module).add('example', () => (
+storiesOf('DrawerAppBar', module).add('example', () => (
   <ThemeProvider theme={theme}>
-    <AppBar toggle={toggle} toggled />
+    <DrawerAppBar toggle={toggle} toggled />
   </ThemeProvider>
 ));

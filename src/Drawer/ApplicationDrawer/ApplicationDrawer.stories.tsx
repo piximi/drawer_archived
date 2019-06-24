@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Drawer } from './Drawer';
+import { ApplicationDrawer } from './ApplicationDrawer';
 import { ThemeProvider } from '@material-ui/styles';
 import { createMuiTheme } from '@material-ui/core';
 import { store } from '@piximi/store';
@@ -16,11 +16,11 @@ const theme = createMuiTheme({
 
 const toggle = () => {};
 
-storiesOf('Drawer', module).add('example', () => (
+storiesOf('ApplicationDrawer', module).add('example', () => (
   <DragDropContextProvider backend={HTML5Backend}>
     <Provider store={store}>
       <ThemeProvider theme={theme}>
-        <Drawer toggle={toggle} toggled />
+        <ApplicationDrawer toggle={toggle} toggled />
       </ThemeProvider>
     </Provider>
   </DragDropContextProvider>
