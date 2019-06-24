@@ -3,7 +3,7 @@ import React from 'react';
 import { ConnectedCategoryDropTarget } from './ConnectedCategoryDropTarget';
 import { ConnectedCategoryListItem } from '../CategoryListItem/CategoryListItem/ConnectedCategoryListItem';
 import HTML5Backend from 'react-dnd-html5-backend';
-import { DragDropContextProvider } from 'react-dnd';
+import { DndProvider } from 'react-dnd';
 import { store } from '@piximi/store';
 import { Provider } from 'react-redux';
 
@@ -20,10 +20,10 @@ const category = {
 
 storiesOf('CategoryDropTarget', module).add('example', () => (
   <Provider store={store}>
-    <DragDropContextProvider backend={HTML5Backend}>
+    <DndProvider backend={HTML5Backend}>
       <ConnectedCategoryDropTarget category={category}>
         <ConnectedCategoryListItem category={category} isOver={true} />
       </ConnectedCategoryDropTarget>
-    </DragDropContextProvider>
+    </DndProvider>
   </Provider>
 ));

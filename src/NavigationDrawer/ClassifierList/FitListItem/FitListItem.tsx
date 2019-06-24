@@ -3,7 +3,7 @@ import * as React from 'react';
 import ScatterPlotIcon from '@material-ui/icons/ScatterPlot';
 import { useTranslation } from 'react-i18next';
 import { useSnackbar } from '@piximi/hooks';
-import { Snackbar } from '@piximi/components';
+import { AlertSnackbar } from '@piximi/components';
 
 export const FitListItem = () => {
   const { openedSnackbar, openSnackbar, closeSnackbar } = useSnackbar();
@@ -24,7 +24,7 @@ export const FitListItem = () => {
         <ListItemText primary={translation('Fit')} />
       </ListItem>
 
-      <Snackbar
+      <AlertSnackbar
         closeSnackbar={closeSnackbar}
         message={''}
         openedSnackbar={openedSnackbar}

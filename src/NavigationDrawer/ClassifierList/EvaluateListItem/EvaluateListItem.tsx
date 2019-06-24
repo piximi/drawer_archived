@@ -2,7 +2,7 @@ import { ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 import * as React from 'react';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import { useTranslation } from 'react-i18next';
-import { Snackbar } from '@piximi/components';
+import { AlertSnackbar } from '@piximi/components';
 import { useSnackbar } from '@piximi/hooks';
 
 export const EvaluateListItem = () => {
@@ -24,7 +24,7 @@ export const EvaluateListItem = () => {
         <ListItemText primary={translation('Evaluate')} />
       </ListItem>
 
-      <Snackbar
+      <AlertSnackbar
         closeSnackbar={closeSnackbar}
         message={`Loss: ${0}, Accuracy: ${0}`}
         openedSnackbar={openedSnackbar}
