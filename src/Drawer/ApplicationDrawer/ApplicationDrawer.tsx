@@ -8,7 +8,7 @@ import {
   MiscellaneousList
 } from '../index';
 import { ConnectedCategoriesList } from '../CategoriesList/CategoriesList/ConnectedCategoriesList';
-import { Divider, Drawer } from '@material-ui/core';
+import { Box, Divider, Drawer } from '@material-ui/core';
 
 const useStyles = makeStyles(styles);
 
@@ -29,7 +29,12 @@ export const ApplicationDrawer = (props: DrawerProps) => {
       open={toggled}
       variant="persistent"
     >
-      <div className={classes.drawerHeader} />
+      <Box
+        className={classes.toolbar}
+        display="flex"
+        justifyContent="flex-end"
+        px={8}
+      />
 
       <DrawerAppBar toggle={toggle} toggled={toggled} />
 
