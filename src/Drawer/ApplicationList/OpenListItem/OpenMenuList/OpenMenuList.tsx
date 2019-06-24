@@ -1,7 +1,11 @@
 import * as React from 'react';
-import * as MaterialUI from '@material-ui/core';
-import { OpenExampleClassifierMenuItem, OpenWeightsMenuItem } from '../../../index';
-import {ConnectedOpenClassifierMenuItem} from "../OpenClassifierMenuItem";
+
+import {
+  OpenExampleClassifierMenuItem,
+  OpenWeightsMenuItem
+} from '../../../index';
+import { ConnectedOpenClassifierMenuItem } from '../OpenClassifierMenuItem';
+import { Divider, MenuList, Paper, Popover } from '@material-ui/core';
 
 type Props = {
   anchorEl: any;
@@ -18,23 +22,23 @@ export const OpenMenuList = (props: Props) => {
   };
 
   return (
-    <MaterialUI.Popover
+    <Popover
       anchorPosition={anchorPosition}
       anchorReference="anchorPosition"
       onClose={closeMenu}
       open={openedMenu}
     >
-      <MaterialUI.Paper>
-        <MaterialUI.MenuList dense>
+      <Paper>
+        <MenuList dense>
           <ConnectedOpenClassifierMenuItem closeMenu={closeMenu} />
 
-          <MaterialUI.Divider />
+          <Divider />
 
           <OpenExampleClassifierMenuItem closeMenu={closeMenu} />
 
           <OpenWeightsMenuItem closeMenu={closeMenu} />
-        </MaterialUI.MenuList>
-      </MaterialUI.Paper>
-    </MaterialUI.Popover>
+        </MenuList>
+      </Paper>
+    </Popover>
   );
 };

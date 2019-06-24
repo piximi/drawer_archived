@@ -1,14 +1,14 @@
-import * as MaterialUI from '@material-ui/core';
 import * as React from 'react';
 import { styles } from './ApplicationDrawer.css';
 import { makeStyles } from '@material-ui/styles';
 import {
-  DrawerAppBar,
   ApplicationList,
   ClassifierList,
+  DrawerAppBar,
   MiscellaneousList
 } from '../index';
 import { ConnectedCategoriesList } from '../CategoriesList/CategoriesList/ConnectedCategoriesList';
+import { Divider, Drawer } from '@material-ui/core';
 
 const useStyles = makeStyles(styles);
 
@@ -23,7 +23,7 @@ export const ApplicationDrawer = (props: DrawerProps) => {
   const { toggled, toggle } = props;
 
   return (
-    <MaterialUI.Drawer
+    <Drawer
       anchor="left"
       classes={{ paper: classes.drawerPaper }}
       open={toggled}
@@ -35,17 +35,17 @@ export const ApplicationDrawer = (props: DrawerProps) => {
 
       <ApplicationList />
 
-      <MaterialUI.Divider component={'hr'} />
+      <Divider component={'hr'} />
 
       <ConnectedCategoriesList />
 
-      <MaterialUI.Divider component={'hr'} />
+      <Divider component={'hr'} />
 
       <ClassifierList />
 
-      <MaterialUI.Divider component={'hr'} />
+      <Divider component={'hr'} />
 
       <MiscellaneousList />
-    </MaterialUI.Drawer>
+    </Drawer>
   );
 };

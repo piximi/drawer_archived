@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { saveAs } from 'file-saver';
 import {
-  DialogTitle,
+  Dialog,
   DialogActions,
   DialogContent,
-  Dialog,
+  DialogTitle,
   FilenameTextField
 } from '@piximi/components';
 import { Classifier } from '@piximi/types';

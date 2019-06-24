@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { createCategoryAction } from '@piximi/store';
 import uuidv4 from 'uuid';
 import { Dispatch } from 'redux';
-import { Classifier, Category } from '@piximi/types';
+import { Category, Classifier } from '@piximi/types';
 import { CreateCategoryDialog } from './CreateCategoryDialog';
 
 let index = 0;

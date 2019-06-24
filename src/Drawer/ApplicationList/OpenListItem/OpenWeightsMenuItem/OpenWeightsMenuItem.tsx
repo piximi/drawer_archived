@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as MaterialUI from '@material-ui/core';
+import { ListItemText, MenuItem } from '@material-ui/core';
 
 export const OpenWeightsMenuItem = (props: any) => {
   const { closeMenu } = props;
@@ -22,9 +22,9 @@ export const OpenWeightsMenuItem = (props: any) => {
       />
 
       <label htmlFor="open-weights">
-        <MaterialUI.MenuItem onClick={onClick}>
-          <MaterialUI.ListItemText primary="Open weights" />
-        </MaterialUI.MenuItem>
+        <MenuItem onClick={onClick}>
+          <ListItemText primary="Open weights" />
+        </MenuItem>
       </label>
     </React.Fragment>
   );

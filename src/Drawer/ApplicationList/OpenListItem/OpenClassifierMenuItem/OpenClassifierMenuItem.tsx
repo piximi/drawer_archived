@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as MaterialUI from '@material-ui/core';
+import { ListItemText, MenuItem } from '@material-ui/core';
 
 export const OpenClassifierMenuItem = (props: any) => {
   const { closeMenu, openClassifier } = props;
@@ -34,9 +34,9 @@ export const OpenClassifierMenuItem = (props: any) => {
       />
 
       <label htmlFor="open-classifier">
-        <MaterialUI.MenuItem onClick={onClick}>
-          <MaterialUI.ListItemText primary="Open classifier" />
-        </MaterialUI.MenuItem>
+        <MenuItem onClick={onClick}>
+          <ListItemText primary="Open classifier" />
+        </MenuItem>
       </label>
     </React.Fragment>
   );

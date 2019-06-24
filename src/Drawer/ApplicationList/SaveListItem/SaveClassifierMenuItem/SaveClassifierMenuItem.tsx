@@ -1,16 +1,17 @@
 import * as React from 'react';
-import * as MaterialUI from '@material-ui/core';
+
 import { useDialog } from '@piximi/hooks';
-import {ConnectedSaveClassifierDialog} from "../../../../SaveClassifierDialog/ConnectedSaveClassifierDialog";
+import { ConnectedSaveClassifierDialog } from '../../../../SaveClassifierDialog/ConnectedSaveClassifierDialog';
+import { ListItemText, MenuItem } from '@material-ui/core';
 
 export const SaveClassifierMenuItem = () => {
   const { openedDialog, openDialog, closeDialog } = useDialog();
 
   return (
     <React.Fragment>
-      <MaterialUI.MenuItem onClick={openDialog}>
-        <MaterialUI.ListItemText primary="Save classifier" />
-      </MaterialUI.MenuItem>
+      <MenuItem onClick={openDialog}>
+        <ListItemText primary="Save classifier" />
+      </MenuItem>
 
       <ConnectedSaveClassifierDialog
         open={openedDialog}

@@ -1,9 +1,16 @@
 import * as React from 'react';
 import { styles } from './DrawerAppBar.css';
-import * as MaterialUI from '@material-ui/core';
+
 import classNames from 'classnames';
 import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/styles';
+import {
+  AppBar,
+  IconButton,
+  Toolbar,
+  Tooltip,
+  Typography
+} from '@material-ui/core';
 
 const useStyles = makeStyles(styles);
 
@@ -18,23 +25,23 @@ export const DrawerAppBar = (props: AppBarProps) => {
   const classes = useStyles({});
 
   return (
-    <MaterialUI.AppBar className={classNames(classes.appBar)} color="default">
-      <MaterialUI.Toolbar disableGutters={true}>
-        <MaterialUI.Tooltip title={(toggled ? 'Hide ' : 'Show ') + 'sidebar'}>
-          <MaterialUI.IconButton
+    <AppBar className={classNames(classes.appBar)} color="default">
+      <Toolbar disableGutters={true}>
+        <Tooltip title={(toggled ? 'Hide ' : 'Show ') + 'sidebar'}>
+          <IconButton
             aria-label="open sidebar"
             className={classNames(classes.menuButton)}
             color="inherit"
             onClick={toggle}
           >
             <MenuIcon />
-          </MaterialUI.IconButton>
-        </MaterialUI.Tooltip>
+          </IconButton>
+        </Tooltip>
 
-        <MaterialUI.Typography variant="h6" color="inherit">
+        <Typography variant="h6" color="inherit">
           Piximi
-        </MaterialUI.Typography>
-      </MaterialUI.Toolbar>
-    </MaterialUI.AppBar>
+        </Typography>
+      </Toolbar>
+    </AppBar>
   );
 };

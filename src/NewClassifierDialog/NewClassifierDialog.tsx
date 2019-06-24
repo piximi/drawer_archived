@@ -1,8 +1,8 @@
 import {
   Dialog,
-  DialogTitle,
   DialogActions,
-  DialogContent
+  DialogContent,
+  DialogTitle
 } from '@piximi/components';
 import { TextField } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';

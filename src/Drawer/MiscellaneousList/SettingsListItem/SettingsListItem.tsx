@@ -4,14 +4,12 @@ import SettingsIcon from '@material-ui/icons/Settings';
 
 export const SettingsListItem = () => {
   return (
-    <React.Fragment>
-      <ListItem dense button disabled>
-        <ListItemIcon>
-          <SettingsIcon />
-        </ListItemIcon>
+    <ListItem dense button disabled>
+      <ListItemIcon>
+        <SettingsIcon />
+      </ListItemIcon>
 
-        <ListItemText primary="Settings" />
-      </ListItem>
-    </React.Fragment>
+      <ListItemText primary="Settings" />
+    </ListItem>
   );
 };

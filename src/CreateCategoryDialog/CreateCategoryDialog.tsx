@@ -2,10 +2,10 @@ import * as React from 'react';
 import {
   CategoryDescriptionTextField,
   ColorIconButton,
-  DialogTitle,
+  Dialog,
   DialogActions,
   DialogContent,
-  Dialog
+  DialogTitle
 } from '@piximi/components';
 
 export const colors = [

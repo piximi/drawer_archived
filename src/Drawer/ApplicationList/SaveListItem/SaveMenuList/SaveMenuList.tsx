@@ -1,10 +1,11 @@
 import * as React from 'react';
-import * as MaterialUI from '@material-ui/core';
+
 import {
-  SaveClassifierMenuItem,
   SaveAnnotationsAndPredictionsMenuItem,
+  SaveClassifierMenuItem,
   SaveWeightsMenuItem
 } from '../../../index';
+import { Divider, MenuList, Paper, Popover } from '@material-ui/core';
 
 type Props = {
   anchorEl: any;
@@ -21,23 +22,23 @@ export const SaveMenuList = (props: Props) => {
   };
 
   return (
-    <MaterialUI.Popover
+    <Popover
       anchorPosition={anchorPosition}
       anchorReference="anchorPosition"
       onClose={onClose}
       open={open}
     >
-      <MaterialUI.Paper>
-        <MaterialUI.MenuList dense>
+      <Paper>
+        <MenuList dense>
           <SaveClassifierMenuItem />
 
-          <MaterialUI.Divider />
+          <Divider />
 
           <SaveAnnotationsAndPredictionsMenuItem />
 
           <SaveWeightsMenuItem />
-        </MaterialUI.MenuList>
-      </MaterialUI.Paper>
-    </MaterialUI.Popover>
+        </MenuList>
+      </Paper>
+    </Popover>
   );
 };

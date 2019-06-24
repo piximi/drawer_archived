@@ -1,10 +1,10 @@
 import {
+  CategoryDescriptionTextField,
+  ColorIconButton,
   Dialog,
   DialogActions,
   DialogContent,
-  DialogTitle,
-  ColorIconButton,
-  CategoryDescriptionTextField
+  DialogTitle
 } from '@piximi/components';
 import * as React from 'react';
 import { Category } from '@piximi/types';

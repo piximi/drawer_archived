@@ -1,9 +1,9 @@
 import * as React from 'react';
 import {
-  DialogTitle,
+  Dialog,
   DialogActions,
   DialogContent,
-  Dialog,
+  DialogTitle,
   FilenameTextField
 } from '@piximi/components';
 
